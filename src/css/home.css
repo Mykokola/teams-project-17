@@ -1,0 +1,25 @@
+/* BASE */
+@import url('./base/normalize.css');
+@import url('./base/fonts.css');
+@import url('./base/reset.css');
+@import url('./base/common.css');
+/* COMPONENT */
+@import url('./components/container.css');
+@import url('./components/modal/prices-room--m-w.css');
+@import url('./components/modal/book-table--m-w.css');
+@import url('./components/modal/book-room--m-w.css');
+@import url('./components/button.css');
+
+
+
+/* PAGES */
+@import url('./pages/header.css');
+@import url('./pages/footer.css');
+
+/* HOME */
+@import url('./pages/home/hero.css');
+@import url('./pages/home/about-complex.css');
+@import url('./pages/home/restaurants.css');
+@import url('./pages/home/welcome-complex.css');
+@import url('./pages/home/hotels-details.css');
+@import url('./pages/home/location-contacts.css');

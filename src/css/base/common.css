@@ -1,3 +1,5 @@
+
+
 :root{
     --dark-color: #121212;
     --middle-color: #484848;
@@ -7,10 +9,11 @@
     --secondary-font: 'Geometria', sans-serif;
 }
 body{
-    font-family: var(--primary-font);
+    font-family: 'Geometria', sans-serif;
     text-transform: uppercase;
     color: var(--dark-color);
     background-color: var(--light-color);
+    font-family: 'DM Sans',sans-serif;
 }
 .no-scroll {
     overflow: hidden;
