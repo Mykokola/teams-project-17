@@ -35,3 +35,9 @@
     font-style: italic;
     font-weight: 700;
 }
+@font-face {
+    font-family: "Geometria";
+    src: url('../fonts/Geometria.ttf') ;
+    font-style: normal;
+    font-weight: 400;
+}
