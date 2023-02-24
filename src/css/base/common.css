@@ -11,7 +11,6 @@ body{
     text-transform: uppercase;
     color: var(--dark-color);
     background-color: var(--light-color);
-    font-family: 'DM Sans',sans-serif;
 }
 .no-scroll {
     overflow: hidden;
