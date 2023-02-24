@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'DM Sans',sans-serif;
-    src: url('../fonts/DMSans-Italic.ttf') ;
+    src: url('../fonts/DMSans-Italic.ttf');
     font-style: italic;
     font-weight: 400;
 
@@ -19,7 +19,7 @@
 }
 @font-face {
     font-family: 'DM Sans',sans-serif;
-    src: url('../fonts/DMSans-MediumItalic.ttf') ;
+    src: url('../fonts/DMSans-MediumItalic.ttf');
     font-style: italic;
     font-weight: 500;
 }
@@ -31,7 +31,7 @@
 }
 @font-face {
     font-family: 'DM Sans',sans-serif;
-    src: url('../fonts/DMSans-BoldItalic.ttf') ;
+    src: url('../fonts/DMSans-BoldItalic.ttf');
     font-style: italic;
     font-weight: 700;
 }
