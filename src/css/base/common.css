@@ -1,3 +1,6 @@
 body{
-    font-family: DM Sans normal;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: var(--dark-color);
+    background-color: var(--light-color);
 }

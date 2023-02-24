@@ -1,4 +1,7 @@
 /* UNTILS */
+@import url('./utils/fonts-var.css');
+@import url('./utils/cubic-bezier-var.css');
+@import url('./utils/color.css');
 /* BASE */
 @import url('./base/normalize.css');
 @import url('./base/reset.css');
