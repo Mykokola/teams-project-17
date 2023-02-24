@@ -1,7 +1,7 @@
 :root{
     --dark-color: #121212;
     --middle-color: #484848;
-    --light-color: #F7F7F7;
+    --light-color: #F6F6F6;
     --transition-dur-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --primary-font: 'DM Sans', sans-serif;
     --secondary-font: 'Geometria', sans-serif;
