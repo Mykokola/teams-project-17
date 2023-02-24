@@ -12,6 +12,7 @@
 @import url('./components/modal/prices-room--modalWindow.css');
 @import url('./components/modal/book-table--modalWindow.css');
 @import url('./components/modal/book-room--modalWindow.css');
+@import url('./components/button.css');
 
 /* LAYOUT */
 @import url('./pages/home-pages/header.css');
