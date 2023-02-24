@@ -12,7 +12,7 @@
     transition: color var(--transition-dur-and-fun), background-color var(--transition-dur-and-fun), border-color var(--transition-dur-and-fun);
 }
 
-    @media screen and(min-width:768px){
+    @media screen and (min-width:768px){
         .btn__default{
             height: 40px;
             font-size: 14px;
@@ -20,7 +20,7 @@
             padding: 8px 24px;
         }
     }
-    @media screen and(min-width:1440px){
+    @media screen and (min-width:1440px){
     .btn__default{
         height: 42px;
         font-size: 18px;
