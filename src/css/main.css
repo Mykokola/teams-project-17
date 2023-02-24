@@ -17,21 +17,21 @@
 @import url('./pages/footer.css');
 
 /* HOME */
-@import url('./pages/home-pages/about-complex.css');
-@import url('./pages/home-pages/restaurants.css');
-@import url('./pages/home-pages/welcome-complex.css');
-@import url('./pages/home-pages/hotels-details.css');
-@import url('./pages/home-pages/location-contacts.css');
-@import url('./pages/home-pages/footer.css');
+@import url('./pages/home/hero.css');
+@import url('./pages/home/about-complex.css');
+@import url('./pages/home/restaurants.css');
+@import url('./pages/home/welcome-complex.css');
+@import url('./pages/home/hotels-details.css');
+@import url('./pages/home/location-contacts.css');
 /* HOTEL-STYLE */
-@import url('./pages/hotel-style/hero.css');
-@import url('./pages/hotel-style/double-luxury-room.css');
-@import url('./pages/hotel-style/triple-room.css');
-@import url('./pages/hotel-style/four-seater-room.css');
+@import url('./pages/hotel/hero.css');
+@import url('./pages/hotel/double-luxury-room.css');
+@import url('./pages/hotel/triple-room.css');
+@import url('./pages/hotel/four-seater-room.css');
 /* RESTURANT STYLE */
-@import url('./pages/restaurant-style/hero.css');
-@import url('./pages/restaurant-style/about-kitchen.css');
-@import url('./pages/restaurant-style/restaurant-menu.css');
+@import url('./pages/restaurant/hero.css');
+@import url('./pages/restaurant/about-kitchen.css');
+@import url('./pages/restaurant/restaurant-menu.css');
 /* ROOM STYLE */
-@import url('./pages/room-style/hero.css');
-@import url('./pages/room-style/amenities.css');
+@import url('./pages/room/hero.css');
+@import url('./pages/room/amenities.css');
