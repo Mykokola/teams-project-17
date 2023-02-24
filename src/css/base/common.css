@@ -49,3 +49,12 @@ body{
         padding-bottom:100px;
      }
   }
+  .list-gap {
+    display: flex;
+    gap: 24px;
+}
+@media screen and (min-width:768px){
+  .list-gap {
+    gap: 32px;
+}
+}
