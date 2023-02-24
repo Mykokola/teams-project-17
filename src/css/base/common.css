@@ -36,3 +36,16 @@ body{
   .link {
     text-decoration: none;
   }
+    .section{
+        padding-bottom:64px;
+     }
+  @media screen and(min-width:768px){
+    .section{
+        padding-bottom:80px;
+     }
+  }
+  @media screen and(min-width:1440px){
+    .section{
+        padding-bottom:100px;
+     }
+  }

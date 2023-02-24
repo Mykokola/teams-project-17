@@ -1,4 +1,4 @@
-h1{
-    font-family: "DM Sans";
-    font-weight: 700;
+.home-hero {
+    color: var(--light-color);
+    background-color: var(--dark-color);
 }

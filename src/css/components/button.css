@@ -1,5 +1,5 @@
 /* BUTTON default */
-.btn__default {
+.btn{
     display: inline-block;
     height: 34px;
     font-size: 14px;
@@ -13,7 +13,7 @@
 }
 
     @media screen and (min-width:768px){
-        .btn__default{
+        .btn{
             height: 40px;
             font-size: 14px;
             line-height: 1.71;
@@ -21,7 +21,7 @@
         }
     }
     @media screen and (min-width:1440px){
-    .btn__default{
+    .btn{
         height: 42px;
         font-size: 18px;
         line-height: 1.33;
