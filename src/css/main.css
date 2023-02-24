@@ -1,7 +1,9 @@
 /* UNTILS */
 /* BASE */
+@import url('./base/normalize.css');
 @import url('./base/reset.css');
 @import url('./base/common.css');
+@import url('./base/fonts.css');
 /* COMPONENT */
 @import url('./components/container.css');
 @import url('./components/modal/prices-room--modalWindow.css');
