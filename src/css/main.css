@@ -26,9 +26,9 @@
 @import url('./pages/hotel-style/triple-room.css');
 @import url('./pages/hotel-style/four-seater-room.css');
 /* RESTURANT STYLE */
-@import url('./pages/resturant-style/hero.css');
-@import url('./pages/resturant-style/about-kitchen.css');
-@import url('./pages/resturant-style/restaurant-menu.css');
+@import url('./pages/restaurant-style/hero.css');
+@import url('./pages/restaurant-style/about-kitchen.css');
+@import url('./pages/restaurant-style/restaurant-menu.css');
 /* ROOM STYLE */
 @import url('./pages/room-style/hero.css');
 @import url('./pages/room-style/amenities.css');
