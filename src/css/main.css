@@ -9,9 +9,9 @@
 @import url('./base/fonts.css');
 /* COMPONENT */
 @import url('./components/container.css');
-@import url('./components/modal/prices-room--modalWindow.css');
-@import url('./components/modal/book-table--modalWindow.css');
-@import url('./components/modal/book-room--modalWindow.css');
+@import url('./components/modal/prices-room--m-w.css');
+@import url('./components/modal/book-table--m-w.css');
+@import url('./components/modal/book-room--m-w.css');
 @import url('./components/button.css');
 
 /* LAYOUT */
