@@ -10,17 +10,19 @@
 @import url('./components/modal/book-room--m-w.css');
 @import url('./components/button.css');
 
-/* LAYOUT */
-@import url('./pages/home-pages/header.css');
-@import url('./pages/home-pages/hero.css');
+
+
+/* PAGES */
+@import url('./pages/header.css');
+@import url('./pages/footer.css');
+
+/* HOME */
 @import url('./pages/home-pages/about-complex.css');
 @import url('./pages/home-pages/restaurants.css');
 @import url('./pages/home-pages/welcome-complex.css');
 @import url('./pages/home-pages/hotels-details.css');
 @import url('./pages/home-pages/location-contacts.css');
 @import url('./pages/home-pages/footer.css');
-
-/* PAGES */
 /* HOTEL-STYLE */
 @import url('./pages/hotel-style/hero.css');
 @import url('./pages/hotel-style/double-luxury-room.css');
