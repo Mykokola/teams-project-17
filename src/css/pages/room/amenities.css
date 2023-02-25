@@ -27,7 +27,7 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
-.room-amenities-images {
+.room-amenities-holder {
     position: relative;
 }
 .room-amenities-img-1-wrap {
@@ -100,7 +100,7 @@
     .room-amenities-img-2-wrap {
         max-width: 496px;
     }
-    .room-amenities-images {
+    .room-amenities-holder {
         margin-left: auto;
         max-width: 848px;
         margin-top: -120px;
