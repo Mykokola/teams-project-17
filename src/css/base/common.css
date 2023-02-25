@@ -11,6 +11,7 @@ body{
     text-transform: uppercase;
     color: var(--dark-color);
     background-color: var(--light-color);
+    font-size: 14px;
 }
 .ital {
   font-style: italic;
