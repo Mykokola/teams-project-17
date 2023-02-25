@@ -19,7 +19,7 @@
 	line-height: 1.25;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
-	width: 246px;
+	width: 245px;
 	margin-bottom: 32px;
 	color: var(--dark-color);
 }
@@ -72,7 +72,6 @@
 	display: flex;
 	gap: 32px;
 	margin-bottom: 40px;
-
 }
 
 	.double-room-list li:first-child {
@@ -110,7 +109,7 @@
 	position: relative;
 }
 	.double-room-list li:first-child {
-		width: 335px;
+		width: 355px;
 	}
 
 	.double-room-list li:last-child {
@@ -120,6 +119,10 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+	.double-room-list {
+	margin-bottom: 0px;
 }
 
 .double-room-btn {
