@@ -1,0 +1,26 @@
+.rest-menu-container {
+  display: block;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rest-menu-container > h2 {
+  display: block;
+  margin-bottom: 36px;
+}
+
+.rest-menu-slider > h3 {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.rest-menu-item {
+  padding-bottom: 8px;
+}
+
+.rest-menu-dish {
+  display: flex;
+  justify-content: space-between;
+}
