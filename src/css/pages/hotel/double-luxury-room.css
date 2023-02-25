@@ -87,7 +87,8 @@
 	}
 
 	.double-room-info {
-	float: right;
+	display: flex;
+	justify-content: flex-end;
 	}
 
 	.double-room-btn {
