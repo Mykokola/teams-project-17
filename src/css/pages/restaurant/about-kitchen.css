@@ -1,0 +1,35 @@
+.list-about-kitchen-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.text-about-kitchen-details {
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+}
+
+.list-item-about-kitchen-details:first-child {
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .list-about-kitchen-img {
+            display: grid;
+            grid-template-columns: 284px 388px;
+            grid-template-rows: 296px 203px;
+            grid-column-gap: 32px;
+            grid-row-gap: 16px;
+        }
+
+        .list-item-about-kitchen-img-2 {
+            order: 0;
+        }
+        .list-item-about-kitchen-img-3 {
+            order: 2;
+        }
+        .list-item-about-kitchen-img-1 {
+            order: 1;
+        }
+}
