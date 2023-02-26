@@ -1,0 +1,210 @@
+.section.home-about {
+  padding-top: 64px;
+}
+.home-about-list-wrapper.restaurant-hotel {
+  position: relative;
+  margin-bottom: 64px;
+}
+.home-about-list-wrapper.restaurant-hotel .home-about-reviews {
+  position: absolute;
+  left: 123px;
+  top: 420px;
+  z-index: 2;
+}
+.home-about-list-item.img-one {
+  width: 335px;
+  height: 442px;
+  background-color: #575757;
+}
+.home-about-list-item.img-two {
+  width: 282px;
+  height: 153px;
+  background-color: #575757;
+}
+@media screen and (max-width: 1439px) {
+  .home-about-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .home-about-list {
+    margin-bottom: 32px;
+    text-transform: none;
+  }
+}
+.home-about-subtitle {
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.18em;
+}
+.home-about-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.home-about-text.part-one {
+  margin-bottom: 14px;
+}
+.home-about-reviews {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 212px;
+  height: 61px;
+  padding: 10px 14px;
+  background-color: var(--dark-color);
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  text-transform: none;
+}
+.home-about-reviews-image-wrapper {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.home-about-reviews b {
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #f7f7f7;
+}
+.home-about-reviews p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #575757;
+}
+.home-about-reviews span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--light-color);
+}
+.home-about-list-wrapper img {
+  text-transform: none;
+}
+.home-about-list-wrapper.business-class {
+  position: relative;
+}
+.home-about-list-wrapper.business-class .home-about-reviews {
+  position: absolute;
+  left: 0;
+  top: 272px;
+}
+.home-about-list-wrapper.business-class .home-about-text {
+  margin-bottom: 40px;
+}
+.home-about-list-wrapper.business-class .img-one {
+  width: 335px;
+  height: 311px;
+  background-color: #575757;
+}
+.home-about-list-wrapper.business-class .img-two {
+  width: 335px;
+  height: 309px;
+  background-color: #575757;
+}
+@media screen and (min-width: 768px) {
+  .section.home-about {
+    padding-top: 80px;
+  }
+  .home-about-list-wrapper.restaurant-hotel {
+    margin-bottom: 80px;
+  }
+  .home-about-list-wrapper.restaurant-hotel .home-about-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .home-about-list-item.img-one {
+    width: 482px;
+    height: 636px;
+  }
+  .home-about-list-wrapper img {
+    margin-bottom: 0;
+  }
+  .home-about-list-item.img-two {
+    position: absolute;
+    top: 209px;
+    left: 300px;
+    width: 404px;
+    height: 219px;
+  }
+  .home-about-list-wrapper.business-class .home-about-text {
+    margin-bottom: 0;
+  }
+  .home-about-list-wrapper.restaurant-hotel .home-about-reviews {
+    top: 176px;
+    left: 370px;
+  }
+  .home-about-list-wrapper.business-class .img-one {
+    display: block;
+    width: 530px;
+    height: 492px;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+  .home-about-list-wrapper.business-class .img-two {
+    display: block;
+    width: 266px;
+    height: 309px;
+    flex-shrink: 0;
+  }
+  .home-about-restaurant-hotel-wrapper {
+    max-width: 472px;
+  }
+  .home-about-list-wrapper.business-class .home-about-reviews {
+    top: 303px;
+    left: 67px;
+  }
+  .home-about-business-class-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    max-width: 561px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section.home-about {
+    padding-top: 100px;
+  }
+  .home-about-list-item.img-two {
+    width: 439px;
+  }
+  .home-about-list-wrapper.restaurant-hotel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 57px;
+    margin-bottom: 100px;
+  }
+  .home-about-restaurant-hotel-wrapper {
+    max-width: 530px;
+  }
+  .home-about-list-wrapper.business-class {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin-left: auto;
+  }
+  .home-about-list-wrapper.business-class .home-about-reviews {
+    left: 563px;
+  }
+  .home-about-business-class-wrapper {
+    gap: 54px;
+    max-width: 583px;
+  }
+  .home-about-list-wrapper img {
+    margin-bottom: 0;
+  }
+  .home-about-list-wrapper.business-class .home-about-text {
+    margin-bottom: 0;
+  }
+  .home-about-list-wrapper.business-class .img-one {
+    margin-left: 0;
+  }
+}
