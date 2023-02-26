@@ -1,0 +1,22 @@
+/* BASE */
+@import url('./base/normalize.css');
+@import url('./base/reset.css');
+@import url('./base/common.css');
+@import url('./base/fonts.css');
+/* COMPONENT */
+@import url('./components/container.css');
+@import url('./components/modal/common.css');
+@import url('./components/button.css');
+
+
+
+/* PAGES */
+@import url('./pages/header.css');
+@import url('./pages/footer.css');
+
+
+/* HOTEL-STYLE */
+@import url('./pages/hotel/hero.css');
+@import url('./pages/hotel/double-luxury-room.css');
+@import url('./pages/hotel/triple-room.css');
+@import url('./pages/hotel/four-seater-room.css');
