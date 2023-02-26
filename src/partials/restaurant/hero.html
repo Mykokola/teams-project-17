@@ -1,5 +1,60 @@
-<section>
-    <h1>restaurant</h1>
-    <button class="btn btn-light-bg js-open-modal" data-modal="book-table">book a table</button>
-    <a class="btn btn-light-bg" href="#menu">view a menu</a>
+<section class="restaurant-hero section">
+  <div class="container restaurant-hero-container">
+    <div class="restaurant-hero-title-holder">
+      <h1 class="restaurant-hero-title">restaurant</h1>
+      <div class="restaurant-hero-buttons">
+        <button class="btn btn-light-bg js-open-modal" data-modal="book-table">
+          book a table
+        </button>
+        <a class="btn btn-light-bg" href="#menu">view a menu</a>
+      </div>
+    </div>
+    <div class="restaurant-hero-slider">
+      <div class="restaurant-hero-slider-images">
+        <div class="restaurant-hero-img-1">
+          <picture>
+            <source
+              srcset="
+                ../../img/restaurant/hero/restaurant3-tablet-1x.jpg 408w,
+                ../../img/restaurant/hero/restaurant3-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <source
+              srcset="
+                ../../img/restaurant/hero/restaurant3-desktop-1x.jpg 496w,
+                ../../img/restaurant/hero/restaurant3-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <img
+              srcset="
+                ../../img/restaurant/hero/restaurant3-mobile-1x.jpg 250w,
+                ../../img/restaurant/hero/restaurant3-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="../../img/restaurant/hero/restaurant3-mobile-1x.jpg"
+              alt="Photo of the restaurant"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="restaurant-hero-slider-arrows">
+        <svg class="restaurant-hero-slider-icon" width="36" height="36">
+          <use></use>
+        </svg>
+        <svg class="restaurant-hero-slider-icon" width="36" height="36">
+          <use></use>
+        </svg>
+      </div>
+    </div>
+
+    <p class="restaurant-hero-text">
+      Whether you're in the mood for a hearty breakfast, a light lunch, or a
+      <span class="ital">romantic dinner</span>, our menu has something for
+      everyone.
+    </p>
+  </div>
 </section>
