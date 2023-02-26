@@ -18,6 +18,7 @@
 .home-restaurant-details-slider {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
   margin-bottom: 18px;
 }
 .home-restaurant-details-slider-wrapper {
