@@ -1,0 +1,25 @@
+.hotel-hero {
+    padding-top: 40px;
+}
+.hotel-hero-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+.hotel-hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+.hotel-hero-img-1 {
+    max-width: 250px;
+}
+.hotel-hero-slider {
+    margin-bottom: 40px;
+}
+.hotel-hero-text {
+    line-height: 1.29;
+    letter-spacing: 0.05em;
+}
