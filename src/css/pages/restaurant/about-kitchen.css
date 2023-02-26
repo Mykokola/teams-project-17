@@ -49,3 +49,38 @@
         margin-bottom: unset;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .list-about-kitchen-img {
+        display: flex;
+    }
+    .list-item-about-kitchen-img-2 {
+        order: 1;
+    }
+    
+    .list-item-about-kitchen-img-3 {
+        order: 2;
+    }
+    
+    .list-item-about-kitchen-img-1 {
+        order: 0;
+    }
+    
+    .list-about-kitchen-details { 
+        position: absolute;
+        top: 535px;
+        left: 575px;
+    }
+
+    .list-item-about-kitchen-details:first-child {
+        width: 334px;
+    }
+
+    .list-item-about-kitchen-details:last-child {
+        width: 453px;
+    }
+
+    .text-about-kitchen-details {
+        font-weight: 500;
+    }
+}
