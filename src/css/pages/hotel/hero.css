@@ -18,6 +18,7 @@
 
 .hotel-hero-img-1 {
     max-width: 250px;
+    min-height: 429px;
 }
 
 .hotel-hero-slider {
@@ -62,6 +63,7 @@
 
     .hotel-hero-img-1 {
         max-width: 436px;
+        min-height: 548px;
     }
 
     .hotel-hero-slider {
@@ -101,6 +103,10 @@
 
     .hotel-hero-slider-images {
         margin-bottom: 16px;
+    }
+
+    .hotel-hero-img-1 {
+        min-height: 580px;
     }
 
     .hotel-hero-slider-arrows {
