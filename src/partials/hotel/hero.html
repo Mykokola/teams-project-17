@@ -1,26 +1,53 @@
 <section class="hotel-hero section">
   <div class="container">
-    <h1 class="hotel-hero-title">hotel</h1>
-    <div class="hotel-hero-buttons">
-      <button class="btn btn-light-bg js-open-modal" data-modal="book-room">
-        book a room
-      </button>
-      <button class="btn btn-light-bg js-open-modal" data-modal="room-prices">
-        view prices
-      </button>
-    </div>
-    <div class="hotel-hero-slider">
-      <div class="hotel-hero-img-1">
-        <img
-          src="../../img/hotel/hero/hotel3-mobile-1x.jpg"
-          alt=""
-          width="250"
-        />
+    <div class="hotel-hero-holder">
+      <div>
+        <h1 class="hotel-hero-title">hotel</h1>
+        <div class="hotel-hero-buttons">
+          <button class="btn btn-light-bg js-open-modal" data-modal="book-room">
+            book a room
+          </button>
+          <button
+            class="btn btn-light-bg js-open-modal"
+            data-modal="room-prices"
+          >
+            view prices
+          </button>
+        </div>
+      </div>
+      <div class="hotel-hero-slider">
+        <picture>
+          <source
+            srcset="
+              ../../img/hotel/hero/hotel3-mobile-1x.jpg  250w,
+              ../../img/hotel/hero/hotel3-mobile-2x.jpg  500w,
+              ../../img/hotel/hero/hotel3-tablet-1x.jpg  250w,
+              ../../img/hotel/hero/hotel3-tablet-2x.jpg  500w,
+              ../../img/hotel/hero/hotel3-desktop-1x.jpg 250w,
+              ../../img/hotel/hero/hotel3-desktop-2x.jpg 500w
+            "
+            media=""
+            sizes=""
+            type=""
+          />
+          <source srcset="" media="" sizes="" type="" />
+          <img src="" alt="" />
+        </picture>
+        <div class="hotel-hero-img-1">
+          <img src="" alt="" width="250" />
+        </div>
+        <svg class="hotel-hero-slider-icon" width="36" height="36">
+          <use></use>
+        </svg>
+        <svg class="hotel-hero-slider-icon" width="36" height="36">
+          <use></use>
+        </svg>
       </div>
     </div>
     <p class="hotel-hero-text">
       Whether you're in the mood for a hearty breakfast, a light lunch, or a
-      romantic dinner, our menu has something for everyone.
+      <span class="ital">romantic dinner</span>, our menu has something for
+      everyone.
     </p>
   </div>
 </section>
