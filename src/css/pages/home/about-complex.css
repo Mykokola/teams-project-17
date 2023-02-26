@@ -62,8 +62,6 @@
   width: 41px;
   height: 41px;
   border-radius: 50%;
-}
-.home-about-reviews-image {
   overflow: hidden;
 }
 .home-about-reviews b {
@@ -142,15 +140,20 @@
     left: 370px;
   }
   .home-about-list-wrapper.business-class .img-one {
+    display: block;
     width: 530px;
     height: 492px;
     margin-left: auto;
     margin-bottom: 40px;
   }
   .home-about-list-wrapper.business-class .img-two {
+    display: block;
     width: 266px;
     height: 309px;
     flex-shrink: 0;
+  }
+  .home-about-restaurant-hotel-wrapper {
+    max-width: 472px;
   }
   .home-about-list-wrapper.business-class .home-about-reviews {
     top: 303px;
