@@ -51,6 +51,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+    /* .container-about-kitchen{
+        display: grid;
+    } */
+
     .list-about-kitchen-img {
         display: flex;
     }
@@ -67,9 +71,6 @@
     }
     
     .list-about-kitchen-details { 
-        position: absolute;
-        top: 535px;
-        left: 575px;
     }
 
     .list-item-about-kitchen-details:first-child {
