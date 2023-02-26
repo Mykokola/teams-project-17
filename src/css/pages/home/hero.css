@@ -1,8 +1,6 @@
 .home-hero {
   color: var(--light-color);
   background-color: var(--dark-color);
-  background-image: url(/img/home/hero/home-hero-mobile-1x.jpg);
-  background-repeat: no-repeat;
 }
 
 .home-hero .btn {
