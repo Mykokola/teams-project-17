@@ -9,5 +9,9 @@
 <path d="M1.453 3.454c1.406-1.406 3.685-1.406 5.091 0l17.454 17.454 17.454-17.454c1.406-1.406 3.685-1.406 5.091 0s1.406 3.685 0 5.091l-20 20c-1.406 1.406-3.685 1.406-5.091 0l-20-20c-1.406-1.406-1.406-3.685 0-5.091z"></path>
 </symbol>
 
+<symbol id="icon-slider-arrow" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M19.556 22.222l-6.222-6.222 6.222-6.222"></path>
+</symbol>
+
 </defs>
 </svg>

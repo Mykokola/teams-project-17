@@ -2,6 +2,10 @@
     padding-top: 40px;
 }
 
+.hotel-hero-title-holder {
+    margin-bottom: 40px;
+}
+
 .hotel-hero-title {
     font-weight: 400;
     font-size: 40px;
@@ -13,10 +17,9 @@
 .hotel-hero-buttons {
     display: flex;
     gap: 12px;
-    margin-bottom: 40px;
 }
 
-.hotel-hero-img-1 {
+.hotel-hero-img {
     max-width: 250px;
     min-height: 429px;
 }
@@ -42,13 +45,26 @@
 }
 
 .hotel-hero-slider-icon {
-    background-color: black;
+    stroke: var(--dark-color);
+    fill: none;
+}
+
+.hotel-hero-slider-icon.left {
+    opacity: 0.3;
+}
+
+.hotel-hero-slider-icon.right {
+    transform: rotate(-180deg);
 }
 
 @media screen and (min-width: 768px) {
     .hotel-hero-container {
         padding-bottom: 76px;
         position: relative;
+    }
+
+    .hotel-hero-title-holder {
+        margin-bottom: 54px;
     }
 
     .hotel-hero-title {
@@ -58,10 +74,9 @@
 
     .hotel-hero-buttons {
         gap: 14px;
-        margin-bottom: 54px;
     }
 
-    .hotel-hero-img-1 {
+    .hotel-hero-img {
         max-width: 436px;
         min-height: 548px;
     }
@@ -91,6 +106,7 @@
     .hotel-hero-title-holder {
         position: relative;
         top: 174px;
+        margin-bottom: 0;
     }
 
     .hotel-hero-title {
@@ -105,7 +121,7 @@
         margin-bottom: 16px;
     }
 
-    .hotel-hero-img-1 {
+    .hotel-hero-img {
         min-height: 580px;
     }
 
