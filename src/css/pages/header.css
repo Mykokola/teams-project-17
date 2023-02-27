@@ -66,7 +66,6 @@ header::before {
 
 .header-social {
   display: none;
-  z-index: 1;
 }
 
 .header-logo {
@@ -77,6 +76,7 @@ header::before {
   transform: translate(-50%, -50%);
   display: inline-block;
   text-align: center;
+  z-index: 1;
 }
 
 .header-menu-icon {
@@ -97,7 +97,6 @@ header::before {
   margin-bottom: auto;
   display: block;
   position: relative;
-  z-index: 1;
 }
 
 .header-logo-title {
