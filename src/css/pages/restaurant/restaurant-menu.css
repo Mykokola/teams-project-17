@@ -1,9 +1,11 @@
+.rest-menu-section {
+  background-color: var(--dark-color);
+}
+
 .rest-menu-container {
   display: block;
-  background-color: var(--dark-color);
+
   color: var(--light-color);
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 64px;
 }
@@ -12,15 +14,11 @@
   .rest-menu-container {
     padding-left: 126px;
     padding-right: 126px;
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .rest-menu-container {
-    padding-left: 168px;
-    padding-right: 168px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -63,7 +61,6 @@
 
 .rest-menu-slider h3 {
   display: block;
-  /* margin-bottom: 32px; */
   margin-bottom: 18px;
   font-style: italic;
   font-size: 18px;
