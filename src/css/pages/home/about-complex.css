@@ -88,6 +88,7 @@
 }
 .home-about-list-wrapper img {
   text-transform: none;
+  margin-bottom: 54px;
 }
 .home-about-list-wrapper.business-class {
   position: relative;
