@@ -21,6 +21,9 @@
   height: 153px;
   background-color: #575757;
 }
+.home-about-list-item.img-two img {
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
 @media screen and (max-width: 1439px) {
   .home-about-list-item:not(:last-child) {
     margin-bottom: 20px;
@@ -85,6 +88,7 @@
 }
 .home-about-list-wrapper img {
   text-transform: none;
+  margin-bottom: 54px;
 }
 .home-about-list-wrapper.business-class {
   position: relative;
