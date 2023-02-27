@@ -1,6 +1,9 @@
 .home-restaurant-details {
   padding-top: 44px;
 }
+.home-restaurant-details-btn-desktop {
+  display: none;
+}
 .home-restaurant-details-title {
   font-weight: 500;
   font-size: 40px;
@@ -82,8 +85,13 @@
     display: flex;
   }
   .home-restaurant-details-btn-wrapper {
-    position: absolute;
-    top: 44px;
-    right: 32px;
+    display: none;
+  }
+  .home-restaurant-details-desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-restaurant-details-btn-desktop {
+    display: block;
   }
 }
