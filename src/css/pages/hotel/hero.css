@@ -104,8 +104,7 @@
     }
 
     .hotel-hero-title-holder {
-        position: relative;
-        top: 174px;
+        margin-top: 174px;
         margin-bottom: 0;
     }
 
