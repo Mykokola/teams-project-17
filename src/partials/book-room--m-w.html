@@ -19,7 +19,7 @@
                     <span class="modal-form-input-desc">who should book a room for?</span>
                 </label>
                 
-                <!-- Варіант 1 input-type="tel" з підстановкою телефону через ДЖС, скрипт в файлі mw-number--reg.js-->
+                <!-- Варіант 1 input-type="tel" з підстановкою телефону через ДЖС, скрипт в папці js файлі mw-number-reg-->
                 <label class="modal-form-field">
                     <input id="online_phone" type="tel" name="user_tel" class="modal-form-input" value="+38 ()"
                         pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+38 (___) ___-__-__"
@@ -36,15 +36,13 @@
                 </label> -->
                 
                 <label class="modal-form-field date">
-                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31"
-                        value="today" placeholder="today" required>
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
                     <span class="modal-form-input-desc">Check-in date</span>
                 </label>
                 
                 
                 <label class="modal-form-field date-desc">
-                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" value="today"
-                        placeholder="today" required>
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
                     <span class="modal-form-input-desc">Check-out date</span>
                 </label>
                 
