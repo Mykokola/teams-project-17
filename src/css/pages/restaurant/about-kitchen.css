@@ -52,6 +52,16 @@
     .list-item-about-kitchen-details:first-child {
         margin-bottom: unset;
     }
+
+    .list-item-about-kitchen-details:first-child {
+        width: 349px;
+    }
+    
+    .list-item-about-kitchen-details:last-child {
+        width: 323px;
+    }
+
+
 }
 
 @media screen and (min-width: 1440px) {
