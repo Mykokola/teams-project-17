@@ -65,7 +65,7 @@
 
     .list-about-kitchen-img {
         display: flex;
-        margin-bottom: unset;
+        margin-bottom: -177px;
     }
     .list-item-about-kitchen-img-2 {
         order: 1;
