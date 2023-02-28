@@ -23,16 +23,16 @@
                 </label> -->
                 <!--* Варіант 2 - з кнопками вверх-вниз -->
                 <label class="modal-form-field number-input">
-                    <input type="number" class="modal-form-input" id="night_quantity" name="night_quantity" placeholder="1" min="1" max="365" required>
-                    <button onclick="this.parentNode.querySelector('#night_quantity').stepUp()" class="up"></button>
-                    <button onclick="this.parentNode.querySelector('#night_quantity').stepDown()" class="down"></button>
+                    <input id="day-value" type="number" class="modal-form-input" id="night_quantity" name="night_quantity" min="1" max="365" required>
+                    <button type="button" id="btn-up" class="up"></button>
+                    <button type="button" id="btn-down" class="down"></button>
                     <span class="modal-form-input-desc">Number of nights</span>
                 </label>
 
                 
                 <!-- TODO Потрібно прописати правило в залежності від кількості ночей * ціна номеру -->
                 <label class="modal-form-field">
-                    <input type="number" name="price" class="modal-form-input" placeholder="2 500" value="2 500">
+                    <input id="price-value" type="number" name="price" class="modal-form-input" placeholder="2 500" value="2 500">
                     <span class="modal-form-input-desc">UAH</span>
                 </label>
 
