@@ -14,6 +14,7 @@
 .home-about-list-item.img-one {
   width: 335px;
   height: 442px;
+  margin-bottom: 20px;
   background-color: #575757;
 }
 .home-about-list-item.img-two {
@@ -88,7 +89,6 @@
 }
 .home-about-list-wrapper img {
   text-transform: none;
-  margin-bottom: 54px;
 }
 .home-about-list-wrapper.business-class {
   position: relative;
@@ -98,14 +98,17 @@
   left: 0;
   top: 272px;
 }
-.home-about-list-wrapper.business-class .home-about-text {
+.home-about-business-class-content-wrapper {
   margin-bottom: 40px;
 }
 .home-about-list-wrapper.business-class .img-one {
+  display: block;
   width: 335px;
   height: 311px;
+  margin-bottom: 54px;
   background-color: #575757;
 }
+
 .home-about-list-wrapper.business-class .img-two {
   width: 335px;
   height: 309px;
@@ -136,9 +139,6 @@
     width: 404px;
     height: 219px;
   }
-  .home-about-list-wrapper.business-class .home-about-text {
-    margin-bottom: 0;
-  }
   .home-about-list-wrapper.restaurant-hotel .home-about-reviews {
     top: 176px;
     left: 370px;
@@ -149,6 +149,9 @@
     height: 492px;
     margin-left: auto;
     margin-bottom: 40px;
+  }
+  .home-about-business-class-content-wrapper {
+    margin-bottom: 0;
   }
   .home-about-list-wrapper.business-class .img-two {
     display: block;

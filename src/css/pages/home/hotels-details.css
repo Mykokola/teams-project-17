@@ -7,9 +7,6 @@
 .home-hotel-details-contant-wrapper {
   margin-bottom: 33px;
 }
-.home-hotel-details-btn-desktop {
-  display: none;
-}
 .home-hotel-details-title {
   margin-bottom: 32px;
   font-weight: 500;
@@ -24,11 +21,6 @@
   letter-spacing: -0.02em;
   color: #f7f7f7;
 }
-.home-hotel-details-btn-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
 .home-hotel-details .img-one {
   max-width: 335px;
   height: 417px;
@@ -36,6 +28,22 @@
 }
 .home-hotel-details-gallery-grid {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .home-hotel-details-btn-wrapper {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .home-hotel-details-btn-wrapper {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -55,6 +63,10 @@
   .home-hotel-details {
     padding-top: 44px;
     padding-bottom: 44px;
+  }
+  .home-hotel-details-btn-wrapper {
+    gap: 14px;
+    bottom: 44px;
   }
   .home-hotel-details-contant-wrapper {
     display: flex;
@@ -78,7 +90,7 @@
     grid-template-rows: 143px 1fr 143px;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   .div1 {
@@ -106,11 +118,7 @@
     width: 176px;
     height: 258px;
   }
-  .home-hotel-details-btn-wrapper {
-    gap: 14px;
-  }
 }
-
 @media screen and (min-width: 1440px) {
   .home-hotel-details {
     padding-top: 44px;
@@ -119,17 +127,13 @@
   .home-hotel-details-contant-wrapper {
     margin-bottom: 0;
   }
-  .home-hotel-details-desktop-wrapper {
+  .home-hotel-details-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
   }
-  .home-hotel-details-btn-desktop {
-    display: flex;
-    gap: 14px;
-  }
   .home-hotel-details-btn-wrapper {
-    display: none;
+    display: flex;
   }
   .home-hotel-details-gallery-grid {
     display: grid;
@@ -138,6 +142,7 @@
     grid-column-gap: 32px;
     grid-row-gap: 28px;
     justify-content: center;
+    margin-bottom: 0;
   }
   .div1 {
     grid-area: 1 / 1 / 2 / 2;

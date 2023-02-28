@@ -1,8 +1,5 @@
 .home-restaurant-details {
-  padding-top: 44px;
-}
-.home-restaurant-details-btn-desktop {
-  display: none;
+  position: relative;
 }
 .home-restaurant-details-title {
   font-weight: 500;
@@ -28,23 +25,27 @@
   width: 158px;
   height: 201px;
 }
-.home-restaurant-details-btn-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin: 0 auto;
-}
 .home-restaurant-details-slider-desk {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
+  .home-restaurant-details-btn-wrapper {
+    gap: 12px;
+  }
   .home-restaurant-details-content-wrapper {
     display: block;
   }
 }
-
+@media screen and (max-width: 1439px) {
+  .home-restaurant-details-btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+}
 @media screen and (min-width: 768px) {
   .home-restaurant-details-title {
     font-weight: 500;
@@ -53,6 +54,9 @@
     letter-spacing: -0.02em;
     margin-bottom: 0;
   }
+  .home-restaurant-details-btn-wrapper {
+    gap: 14px;
+  }
   .home-restaurant-details-text {
     width: 221px;
   }
@@ -60,18 +64,22 @@
     width: 336px;
     height: 309px;
   }
-  .home-restaurant-details-btn-wrapper {
-    align-items: flex-start;
-  }
   .home-restaurant-details-content-wrapper {
     align-items: center;
     margin-bottom: 80px;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .home-restaurant-details {
     position: relative;
+  }
+  .home-restaurant-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-restaurant-details-btn-wrapper {
+    display: flex;
+    gap: 14px;
   }
   .home-restaurant-details-content-wrapper {
     display: flex;
@@ -83,15 +91,5 @@
   }
   .home-restaurant-details-slider-desk {
     display: flex;
-  }
-  .home-restaurant-details-btn-wrapper {
-    display: none;
-  }
-  .home-restaurant-details-desktop-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  .home-restaurant-details-btn-desktop {
-    display: block;
   }
 }
