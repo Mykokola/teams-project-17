@@ -35,7 +35,7 @@ header {
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -67,24 +67,25 @@ header {
   z-index: 1;
 }
 
+.header-button {
+  background-color: transparent;
+  border: transparent;
+  width: 28px;
+  height: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  position: relative;
+}
+
 .header-menu-icon {
   width: 100%;
+  height: 100%;
   stroke: var(--dark-color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.header-button {
-  background-color: transparent;
-  border: transparent;
-  width: 21px;
-  height: 14px;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
-  position: relative;
 }
 
 .header-logo-title {
@@ -131,7 +132,7 @@ header {
 
 .menu-head {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding-top: 32px;
   padding-left: 20px;
   padding-right: 20px;
@@ -143,8 +144,8 @@ header {
 .menu-button-close {
   background-color: transparent;
   border: transparent;
-  width: 14px;
-  height: 14px;
+  width: 28px;
+  height: 28px;
   margin-top: auto;
   margin-bottom: auto;
   display: block;
@@ -154,6 +155,7 @@ header {
 
 .header-menu-icon-close {
   width: 100%;
+  height: 100%;
   stroke: var(--light-color);
   position: absolute;
   top: 50%;
@@ -234,34 +236,15 @@ header {
     padding-top: 29px;
     padding-bottom: 29px;
   }
-  .menu-head {
-    padding-top: 29px;
-    padding-bottom: 29px;
-  }
-
-  .menu-social-mobile {
-    display: none;
-  }
-
-  .header-button {
-    width: 24px;
-    height: 16px;
-  }
-
-  .menu-social {
-    display: flex;
-    margin-left: auto;
-    gap: 23px;
-  }
 
   .header-social {
     display: flex;
     gap: 23px;
   }
 
-  .header-menu-icon-close {
-    width: 16px;
-    height: 16px;
+  .header-button {
+    width: 32px;
+    height: 32px;
   }
 
   .header-logo-title {
@@ -272,6 +255,26 @@ header {
   .header-logo-text {
     font-size: 8px;
     line-height: 1.25;
+  }
+
+  .menu-head {
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+
+  .menu-button-close {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-social-mobile {
+    display: none;
+  }
+
+  .menu-social {
+    display: flex;
+    margin-left: auto;
+    gap: 23px;
   }
 
   .header-menu-logo-title {
