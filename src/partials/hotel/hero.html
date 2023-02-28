@@ -1,6 +1,120 @@
-<section>
-    <h1>hotel</h1>
-    <button>book a room</button>
-    <button>view prices</button>
-    <p>Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone.</p>
+<section class="hotel-hero section">
+  <div class="container hotel-hero-container">
+    <div class="hotel-hero-title-holder">
+      <h1 class="hotel-hero-title">hotel</h1>
+      <div class="hotel-hero-buttons">
+        <button class="btn btn-light-bg js-open-modal" data-modal="book-room">
+          book a room
+        </button>
+        <button class="btn btn-light-bg js-open-modal" data-modal="room-prices">
+          view prices
+        </button>
+      </div>
+    </div>
+    <div class="hotel-hero-slider">
+      <div class="hotel-hero-slider-images">
+        <div class="hotel-hero-img">
+          <picture>
+            <source
+              srcset="
+                /img/hotel/hero/hotel3-desktop-1x.jpg 496w,
+                /img/hotel/hero/hotel3-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="
+                /img/hotel/hero/hotel3-tablet-1x.jpg 408w,
+                /img/hotel/hero/hotel3-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="
+                /img/hotel/hero/hotel3-mobile-1x.jpg 250w,
+                /img/hotel/hero/hotel3-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="/img/hotel/hero/hotel3-mobile-1x.jpg"
+              alt="Photo of the hotel"
+            />
+          </picture>
+        </div>
+        <div class="hotel-hero-img visually-hidden">
+          <picture>
+            <source
+              srcset="
+                /img/hotel/hero/hotel1-desktop-1x.jpg 496w,
+                /img/hotel/hero/hotel1-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="
+                /img/hotel/hero/hotel1-tablet-1x.jpg 408w,
+                /img/hotel/hero/hotel1-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="
+                /img/hotel/hero/hotel1-mobile-1x.jpg 250w,
+                /img/hotel/hero/hotel1-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="/img/hotel/hero/hotel1-mobile-1x.jpg"
+              alt="Photo of the hotel"
+            />
+          </picture>
+        </div>
+        <div class="hotel-hero-img visually-hidden">
+          <picture>
+            <source
+              srcset="
+                /img/hotel/hero/hotel2-desktop-1x.jpg 496w,
+                /img/hotel/hero/hotel2-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="
+                /img/hotel/hero/hotel2-tablet-1x.jpg 408w,
+                /img/hotel/hero/hotel2-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="
+                /img/hotel/hero/hotel2-mobile-1x.jpg 250w,
+                /img/hotel/hero/hotel2-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="/img/hotel/hero/hotel2-mobile-1x.jpg"
+              alt="Photo of the hotel"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="hotel-hero-slider-arrows">
+        <svg class="hotel-hero-slider-icon left" width="36" height="36">
+          <use href="././img/sprite.svg#icon-button-arrow-left"></use>
+        </svg>
+        <svg class="hotel-hero-slider-icon right" width="36" height="36">
+          <use href="././img/sprite.svg#icon-button-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+
+    <p class="hotel-hero-text">
+      Whether you're in the mood for a hearty breakfast, a light lunch, or a
+      <span class="ital">romantic dinner</span>, our menu has something for
+      everyone.
+    </p>
+  </div>
 </section>
