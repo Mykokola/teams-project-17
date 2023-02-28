@@ -1,7 +1,7 @@
 /* ------------------HEADER------------------------ */
 .home-header > header {
-  background-color: var(--dark-color);
-  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .home-header .header-menu-icon {
   stroke: var(--light-color);
@@ -31,7 +31,11 @@ header {
 .header-home {
   background-color: var(--dark-color);
 }
-
+.home-header  .header-container{
+  position: fixed;
+  width: 100%;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -39,7 +43,6 @@ header {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  max-width: 1440px;
 }
 
 .header-desktop-nav {
