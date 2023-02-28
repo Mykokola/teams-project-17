@@ -11,7 +11,7 @@
 }
 
 .home-header .header-logo-text {
-  color: var(--light-color);
+  color: #d8d8d8;
 }
 
 .home-header .social-icon {
@@ -23,25 +23,28 @@
 }
 
 header {
-  padding: 32px 0;
   background-color: #fff;
+}
+
+.header-container {
+  padding: 32px 0;
   position: relative;
 }
 
-.home-header::before {
+.home-header::after {
   content: '';
   position: absolute;
-  top: 78px;
+  top: 90px;
   left: 0;
   width: 100%;
   height: 0.5px;
   background-color: rgba(247, 247, 247, 0.2);
 }
 
-header::before {
+header::after {
   content: '';
   position: absolute;
-  top: 78px;
+  top: 90px;
   left: 0;
   width: 100%;
   height: 0.5px;
@@ -147,10 +150,10 @@ header::before {
   padding: 32px 40px 30px 32px;
   position: relative;
 }
-.menu-head::before {
+.menu-head::after {
   content: '';
   position: absolute;
-  top: 78px;
+  top: 90px;
   left: 0;
   width: 100%;
   height: 0.5px;
@@ -202,7 +205,7 @@ header::before {
   font-size: 6px;
   line-height: 1.33;
   letter-spacing: 0.18em;
-  color: var(--light-color);
+  color: #d8d8d8;
 }
 
 .menu-navigation {
