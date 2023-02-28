@@ -1,21 +1,376 @@
-.header {
-  padding: 20px 0;
+/* ------------------HEADER------------------------ */
+.home-header > header {
+  background-color: var(--dark-color);
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+}
+.home-header .header-menu-icon {
+  stroke: var(--light-color);
 }
 
-.nav-list {
+.home-header .header-logo-title {
+  color: var(--light-color);
+}
+
+.home-header .header-logo-text {
+  color: #d8d8d8;
+}
+
+.home-header .social-icon {
+  stroke: var(--light-color);
+}
+
+.home-header .desktop-nav-link {
+  color: var(--light-color);
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+
+.header-home {
+  background-color: var(--dark-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-desktop-nav {
+  display: none;
+  z-index: 1;
+}
+
+.header-social {
+  display: none;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+}
+
+.header-button {
+  background-color: transparent;
+  border: transparent;
+  width: 28px;
+  height: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  position: relative;
+}
+
+.header-menu-icon {
+  width: 100%;
+  height: 100%;
+  stroke: var(--dark-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-logo-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+  color: var(--dark-color);
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.header-logo-text {
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+  color: var(--dark-color);
+}
+
+/* ----------------------HEADER-MENU------------------ */
+
+.header-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
+  overflow-y: auto;
+}
+
+.header-menu.visually-hidden {
+  transform: translateX(2000px);
+}
+
+.is-hidden {
+  transform: translateX(-2000px);
+}
+
+.menu-head {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  padding-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 32px;
+  position: relative;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 
-.nav-link {
+.menu-button-close {
+  background-color: transparent;
+  border: transparent;
+  width: 28px;
+  height: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.header-menu-icon-close {
+  width: 100%;
+  height: 100%;
+  stroke: var(--light-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-menu-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+}
+
+.header-menu-logo-title {
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+  color: var(--light-color);
+  text-align: center;
+  margin-bottom: 3px;
+}
+.header-menu-logo-text {
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+  color: #d8d8d8;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.menu-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 128px;
+}
+.menu-navigation-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  color: #f7f7f7;
+}
+.menu-social-mobile {
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.social-icon {
+  stroke: var(--dark-color);
+  fill: transparent;
+}
+
+.menu-social-icon {
+  stroke: var(--light-color);
+  fill: transparent;
+}
+
+.menu-social {
+  display: none;
+}
+
+/* -------------------SCREEN-375px---------------------- */
+
+@media screen and (min-width: 375px) {
+}
+
+/* -------------------SCREEN-768px---------------------- */
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+
+  .header-social {
+    display: flex;
+    gap: 23px;
+  }
+
+  .header-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-logo-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .header-logo-text {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  .menu-head {
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+
+  .menu-button-close {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-social-mobile {
+    display: none;
+  }
+
+  .menu-social {
+    display: flex;
+    margin-left: auto;
+    gap: 23px;
+  }
+
+  .header-menu-logo-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .header-menu-logo-text {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  .menu-navigation-title {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .menu-navigation-title.restaurant {
+    font-size: 24px;
+  }
+
+  .menu-navigation {
+    margin-top: 240px;
+  }
+}
+
+/* -------------------SCREEN-1440px---------------------- */
+
+@media screen and (min-width: 1440px) {
+  .header-button {
+    display: none;
+  }
+
+  .header-desktop-nav {
+    display: inline-block;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .desktop-nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .desktop-nav-link {
+    line-height: 1.29;
+    letter-spacing: 0.05em;
+  }
+
+  .home {
+    position: relative;
+  }
+
+  .hotel {
+    position: relative;
+  }
+
+  .restaurant {
+    position: relative;
+  }
+
+  .home-header .home::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    top: 20px;
+    left: 50%;
+    background: var(--light-color);
+  }
+
+  .restaurant-header .restaurant::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    top: 20px;
+    left: 50%;
+    background: var(--dark-color);
+  }
+
+  .hotel-header .hotel::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    top: 20px;
+    left: 50%;
+    background: var(--dark-color);
+  }
+
+  .is-hidden {
+    display: none;
+  }
 }
