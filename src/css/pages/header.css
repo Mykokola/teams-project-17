@@ -1,7 +1,22 @@
 /* ------------------HEADER------------------------ */
 .home-header > header {
-  max-width: 1440px;
+  width: auto;
   margin: 0 auto;
+}
+@media screen and (min-width:375px){
+  .home-header > header{
+    max-width: 375px;
+  }
+}
+@media screen and (min-width:768px){
+  .home-header > header{
+    max-width: 768px;
+  }
+}
+@media screen and (min-width:1440px){
+  .home-header > header{
+    max-width: 1440px;
+  }
 }
 .home-header .header-menu-icon {
   stroke: var(--light-color);
