@@ -1,6 +1,7 @@
 /* ------------------HEADER------------------------ */
 .home-header > header {
   background-color: var(--dark-color);
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 .home-header .header-menu-icon {
   stroke: var(--light-color);
@@ -24,31 +25,7 @@
 
 header {
   background-color: #fff;
-}
-
-.header-container {
-  padding: 32px 0;
-  position: relative;
-}
-
-.home-header::after {
-  content: '';
-  position: absolute;
-  top: 90px;
-  left: 0;
-  width: 100%;
-  height: 0.5px;
-  background-color: rgba(247, 247, 247, 0.2);
-}
-
-header::after {
-  content: '';
-  position: absolute;
-  top: 90px;
-  left: 0;
-  width: 100%;
-  height: 0.5px;
-  background-color: rgba(18, 18, 18, 0.3);
+  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 
 .header-home {
@@ -60,6 +37,7 @@ header::after {
   justify-content: space-between;
   align-items: baseline;
   position: relative;
+  padding: 32px 0;
 }
 
 .header-desktop-nav {
@@ -149,15 +127,7 @@ header::after {
   align-items: baseline;
   padding: 32px 40px 30px 32px;
   position: relative;
-}
-.menu-head::after {
-  content: '';
-  position: absolute;
-  top: 90px;
-  left: 0;
-  width: 100%;
-  height: 0.5px;
-  background-color: rgba(247, 247, 247, 0.2);
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 
 .menu-button-close {
