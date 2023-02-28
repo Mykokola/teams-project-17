@@ -1,0 +1,136 @@
+.double-room-images {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	column-gap: 19px;
+
+	margin-bottom: 32px;
+}
+.double-room-img-1 {
+	order: 1;
+}
+.double-room-img-3 {
+	order: 2;
+}
+
+.double-room-title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	width: 245px;
+	margin-bottom: 32px;
+	color: var(--dark-color);
+}
+.double-room-text {
+	font-size: 14px;
+	line-height: 1.29;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: var(--dark-color);
+}
+
+.double-room-list {
+	margin-bottom: 28px;
+}
+.double-room-item {
+	margin-bottom: 24px;
+}
+
+.double-room-btn {
+	margin-right: 12px;
+}
+
+@media screen and (min-width:768px) {
+
+	.double-room-images {
+	display: grid;
+	grid-template-columns: 341px 331px;
+	grid-template-rows: 261px 175px;
+	grid-column-gap: 32px;
+	grid-row-gap: 32px;
+	justify-content: end;
+	justify-items: end;
+
+	margin-bottom: 40px;
+}
+.double-room-img-1, .double-room-img-3 {
+	order: 0;
+}
+
+	.double-room-title {
+	width: auto;
+	font-size: 40px;
+	line-height: 1.1;
+	}
+
+	.double-room-text {
+	font-size: 18px;
+	line-height: 1.33;
+}
+
+	.double-room-list {
+	display: flex;
+	gap: 32px;
+	margin-bottom: 40px;
+}
+
+	.double-room-list li:first-child {
+		width: 369px;
+	}
+
+	.double-room-list li:last-child {
+		width: 299px;
+	}
+
+	.double-room-item {
+	margin-bottom: auto;
+	}
+
+	.double-room-info {
+	display: flex;
+	justify-content: flex-end;
+	}
+
+	.double-room-btn {
+	margin-right: 14px;
+}
+}
+
+@media screen and (min-width:1440px) {
+	
+	.double-room-images {
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 50px;
+	}
+
+.double-room-details {
+	position: relative;
+}
+	.double-room-list li:first-child {
+		width: 355px;
+	}
+
+	.double-room-list li:last-child {
+		width: 299px;
+	}
+.double-room-info {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+	.double-room-list {
+	margin-bottom: 0px;
+}
+
+.double-room-btn {
+	margin-right: 14px;
+}
+}

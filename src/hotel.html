@@ -6,20 +6,29 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIMINO Hotel</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> 
     <link rel="stylesheet" href="./css/hotel.css" />
   </head>
+
   <body class="hotel-header">
-    <load src="./partials/header.html" />
-    <main>
-      <load src="./partials/hotel/hero.html" />
-      <load src="./partials/hotel/double-luxury-room.html" />
-      <load src="./partials/hotel/triple-room.html" />
-      <load src="./partials/hotel/four-seater-room.html" />
-    </main>
-    <load src="./partials/footer.html" />
-    <load src="./partials/book-room--m-w.html" />
-    <load src="./partials/book-table--m-w.html" />
-    <load src="./partials/prices-room--m-w.html" />
-    <script type="module" src="./js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <load src="./partials/header.html"/>
+  <main>
+    <load src="./partials/hotel/hero.html"/>
+    <load src="./partials/hotel/double-luxury-room.html"/>
+    <load src="./partials/hotel/triple-room.html"/>
+    <load src="./partials/hotel/four-seater-room.html"/>
+
+  </main>
+  <load src="./partials/footer.html"/>
+  <load src="./partials/book-room--m-w.html"/>
+  <load src="./partials/book-table--m-w.html"/>
+  <load src="./partials/prices-room--m-w.html"/>
+  <script type="module" src="./js/main.js"></script>
   </body>
 </html>

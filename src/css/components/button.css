@@ -28,6 +28,11 @@
         padding: 9px 24px;
     }
 }
+    @media screen and (max-width:320px) {
+        .btn{
+            font-size: 12px;
+        }
+    }
 /* background */
 .btn-light-bg {
     color: var(--dark-color);
