@@ -2,6 +2,9 @@
   padding-top: 40px;
   padding-bottom: 64px;
 }
+.hero-room-page {
+  overflow: hidden;
+}
 .hero-room-title {
   font-weight: 400;
   font-size: 40px;
@@ -13,8 +16,16 @@
 .hero-room-btn {
   margin-bottom: 40px;
 }
-.hero-room-img {
+.hero-room-wrapper {
+  position: relative;
+  display: flex;
+  width: 520px;
   margin-bottom: 100px;
+}
+.hero-room-picture:not(:last-child) {
+  margin-right: 20px;
+}
+.hero-room-img {
   width: 250px;
 }
 .hero-room-text {
@@ -39,14 +50,28 @@
   .hero-room-btn {
     margin-bottom: 28px;
   }
-  .hero-room-img {
+  .hero-room-wrapper {
+    width: 904px;
     margin-bottom: 40px;
+  }
+  .hero-room-picture:not(:last-child) {
+    margin-right: 32px;
+  }
+  .hero-room-img {
+    width: 436px;
+  }
+  .hero-room-slick {
+    bottom: -96px;
+    left: 600px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero-room {
+  /* .hero-room {
     padding-top: 169px;
     padding-bottom: 48px;
+  } */
+  .hero-room-page {
+    padding-top: 169px;
   }
   .hero-room-container {
     width: 100%;
@@ -62,11 +87,18 @@
   .hero-room-btn {
     margin-bottom: 169px;
   }
-  .hero-room-img {
+  .hero-room-wrapper {
     position: absolute;
-    top: 50%;
-    right: 32px;
+    top: 150px;
+    right: -50%;
     transform: translate(-50%, -50%);
     margin-bottom: 0;
+  }
+  .hero-room-img {
+    height: 100%;
+    width: 100%;
+  }
+  .hero-room-text {
+    padding-bottom: 48px;
   }
 }
