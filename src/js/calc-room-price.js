@@ -1,7 +1,7 @@
-let dayValue = document.querySelector('#day-value');
-let priceValue = document.querySelector('#price-value');
-let btnUp = document.querySelector('#btn-up');
-let btnDown = document.querySelector('#btn-down');
+const dayValue = document.querySelector('#day-value');
+const priceValue = document.querySelector('#price-value');
+const btnUp = document.querySelector('#btn-up');
+const btnDown = document.querySelector('#btn-down');
 priceValue.value = 2500;
 dayValue.value = 1;
 function pricechange(s){
