@@ -95,3 +95,19 @@
     display: block;
   }
 }
+
+
+/* -------------- SLIDER --------------- */
+.slick-slider {
+  min-width: 0;
+}
+
+.slider__item{
+  margin-right: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .slider__item{
+    margin-right: 32px;
+  }
+}
