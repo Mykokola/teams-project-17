@@ -1,15 +1,69 @@
 <section class="hero-room">
-  <div class="container">
+  <div class="hero-room-page container">
     <div class="hero-room-container">
       <h1 class="hero-room-title">
         DOUBLE <br /><span class="ital">LUXURY</span> ROOM
       </h1>
       <button class="hero-room-btn btn btn-light-bg">view prices</button>
-      <img
-        class="hero-room-img"
-        src="../../img/room/hero/image-01-mobile-1x.jpg"
-        alt=""
-      />
+      <div class="hero-room-wrapper">
+        <picture class="hero-room-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../../img/room/hero/image-01-desktop-1x.jpg 1x,
+              ../../img/room/hero/image-01-desktop-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../../img/room/hero/image-01-tablet-1x.jpg 1x,
+              ../../img/room/hero/image-01-tablet-2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../../img/room/hero/image-01-mobile-1x.jpg 1x,
+              ../../img/room/hero/image-01-mobile-2x.jpg 2x
+            "
+          />
+          <img
+            class="hero-room-img"
+            src="../../img/room/hero/image-01-mobile-1x.jpg"
+            alt=""
+          />
+        </picture>
+        <picture class="hero-room-picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../../img/room/hero/image-02-desktop-1x.jpg 1x,
+              ../../img/room/hero/image-02-desktop-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../../img/room/hero/image-02-tablet-1x.jpg 1x,
+              ../../img/room/hero/image-02-tablet-2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../../img/room/hero/image-02-mobile-1x.jpg 1x,
+              ../../img/room/hero/image-02-mobile-2x.jpg 2x
+            "
+          />
+          <img
+            class="hero-room-img"
+            src="../../img/room/hero/image-02-mobile-1x.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+
       <p class="hero-room-text">
         The Mimino hotel features spacious and stylish double luxury rooms with
         modern amenities for a comfortable stay.
