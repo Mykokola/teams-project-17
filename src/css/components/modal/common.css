@@ -300,3 +300,9 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--light-color);
     background-color: var(--dark-color);
 }
+.date-desc ::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(../../../img/arrow-down.svg) no-repeat center;
+    background-size: contain;
+  }
