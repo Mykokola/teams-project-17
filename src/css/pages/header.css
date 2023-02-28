@@ -25,14 +25,13 @@
 
 header {
   background-color: #fff;
-  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 
 .header-home {
   background-color: var(--dark-color);
 }
 .home-header  .header-container{
-  position: fixed;
+  position: absolute;
   width: 100%;
   border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
