@@ -28,11 +28,6 @@
 .hero-room-img {
   width: 250px;
 }
-.hero-room-slick {
-  position: absolute;
-  bottom: -60px;
-  left: 239px;
-}
 .hero-room-text {
   width: 289px;
 
@@ -71,9 +66,12 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero-room {
+  /* .hero-room {
     padding-top: 169px;
     padding-bottom: 48px;
+  } */
+  .hero-room-page {
+    padding-top: 169px;
   }
   .hero-room-container {
     width: 100%;
@@ -91,7 +89,7 @@
   }
   .hero-room-wrapper {
     position: absolute;
-    top: 50%;
+    top: 150px;
     right: -50%;
     transform: translate(-50%, -50%);
     margin-bottom: 0;
@@ -99,5 +97,8 @@
   .hero-room-img {
     height: 100%;
     width: 100%;
+  }
+  .hero-room-text {
+    padding-bottom: 48px;
   }
 }
