@@ -18,6 +18,28 @@
     margin-bottom: 24px;
 }
 
+@media screen and (min-width: 375px) {
+    .list-about-kitchen-img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+    
+    .text-about-kitchen-details {
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+    }
+    
+    .text-about-kitchen-details-hidden-desktop {
+        display: none;
+    }
+    
+    .list-item-about-kitchen-details:first-child {
+        margin-bottom: 24px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .list-about-kitchen-img {
         display: grid;
