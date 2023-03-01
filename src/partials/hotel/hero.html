@@ -11,9 +11,9 @@
         </button>
       </div>
     </div>
-    <div class="hotel-hero-slider">
-      <div class="hotel-hero-slider-images">
-        <div class="hotel-hero-img">
+    <div class="hotel-hero-slider-container">
+      <div class="hotel-hero-slider">
+        <div class="hotel-hero-img hotel-hero-slider-item">
           <picture>
             <source
               srcset="
@@ -42,7 +42,7 @@
             />
           </picture>
         </div>
-        <div class="hotel-hero-img visually-hidden">
+        <div class="hotel-hero-img hotel-hero-slider-item">
           <picture>
             <source
               srcset="
@@ -71,7 +71,7 @@
             />
           </picture>
         </div>
-        <div class="hotel-hero-img visually-hidden">
+        <div class="hotel-hero-img hotel-hero-slider-item">
           <picture>
             <source
               srcset="
@@ -102,10 +102,18 @@
         </div>
       </div>
       <div class="hotel-hero-slider-arrows">
-        <svg class="hotel-hero-slider-icon left" width="36" height="36">
+        <svg
+          class="hotel-hero-slider-icon hotel-hero-prev"
+          width="36"
+          height="36"
+        >
           <use href="././img/sprite.svg#icon-button-arrow-left"></use>
         </svg>
-        <svg class="hotel-hero-slider-icon right" width="36" height="36">
+        <svg
+          class="hotel-hero-slider-icon hotel-hero-next"
+          width="36"
+          height="36"
+        >
           <use href="././img/sprite.svg#icon-button-arrow-right"></use>
         </svg>
       </div>
@@ -118,3 +126,31 @@
     </p>
   </div>
 </section>
+<script>
+  $('.hotel-hero-slider').slick({
+    slide: '.hotel-hero-slider-item',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    variableWidth: true,
+    prevArrow: $('.hotel-hero-prev'),
+    nextArrow: $('.hotel-hero-next'),
+  });
+  $('.hotel-hero-slider').on(
+    'afterChange',
+    function (event, slick, currentSlide) {
+      if (currentSlide === 0) {
+        $('.hotel-hero-prev').css('opacity', '0.3');
+      } else {
+        $('.hotel-hero-prev').css('opacity', '1');
+      }
+      if (currentSlide === slick.slideCount - 1) {
+        $('.hotel-hero-next').css('opacity', '0.3');
+      } else {
+        $('.hotel-hero-next').css('opacity', '1');
+      }
+    }
+  );
+</script>
