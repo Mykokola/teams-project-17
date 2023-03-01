@@ -16,7 +16,7 @@
     filter: grayscale();
     box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }
-.list-gap {
+.list-gap--location {
     flex-direction: column;
     margin-top: 32px;
 }
@@ -65,7 +65,7 @@
         width: 704px;
         height: 576px;
     }
-    .list-gap {
+    .list-gap--location {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -100,7 +100,7 @@
     .home-location .list .home-location-address__item:not(:last-child) {
         margin-bottom: 4px;
     }
-    .list-gap {
+    .list-gap--location {
         gap: 70px;
         justify-content: flex-start;
         margin-top: 0;
