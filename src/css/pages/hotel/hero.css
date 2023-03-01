@@ -45,7 +45,6 @@
 
 .hotel-hero-slider-arrows {
     width: 104px;
-    height: 36px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -83,6 +82,10 @@
     .hotel-hero-img {
         max-width: 436px;
         min-height: 548px;
+    }
+
+    .hotel-hero-img:not(:last-of-type) {
+        margin-right: 32px;
     }
 
     .hotel-hero-slider-container {
