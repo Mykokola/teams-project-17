@@ -69,9 +69,6 @@ footer {
 /* ---------------------------SCREEN-1440px--------------------------- */
 
 @media screen and (min-width: 1440px) {
-  footer {
-    max-width: 1440px;
-  }
 
   .footer-container {
     padding-bottom: 80px;
