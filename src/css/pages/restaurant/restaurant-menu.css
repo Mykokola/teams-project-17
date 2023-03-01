@@ -2,22 +2,25 @@
   background-color: var(--dark-color);
 }
 
-.rest-menu-container {
-  display: block;
-  color: var(--light-color);
+.rest-menu-section {
   padding-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .rest-menu-container {
+  .rest-menu-section {
     padding-top: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .rest-menu-container {
+  .rest-menu-section {
     padding-top: 100px;
   }
+}
+
+.rest-menu-container {
+  display: block;
+  color: var(--light-color);
 }
 
 .rest-menu-title {
