@@ -9,9 +9,9 @@
         <a class="btn btn-light-bg" href="#menu">view a menu</a>
       </div>
     </div>
-    <div class="restaurant-hero-slider">
-      <div class="restaurant-hero-slider-images">
-        <div class="restaurant-hero-img">
+    <div class="restaurant-hero-slider-container">
+      <div class="restaurant-hero-slider">
+        <div class="restaurant-hero-img restaurant-hero-slider-item">
           <picture>
             <source
               srcset="
@@ -40,7 +40,7 @@
             />
           </picture>
         </div>
-        <div class="restaurant-hero-img visually-hidden">
+        <div class="restaurant-hero-img restaurant-hero-slider-item">
           <picture>
             <source
               srcset="
@@ -69,7 +69,7 @@
             />
           </picture>
         </div>
-        <div class="restaurant-hero-img visually-hidden">
+        <div class="restaurant-hero-img restaurant-hero-slider-item">
           <picture>
             <source
               srcset="
@@ -100,10 +100,18 @@
         </div>
       </div>
       <div class="restaurant-hero-slider-arrows">
-        <svg class="restaurant-hero-slider-icon left" width="36" height="36">
+        <svg
+          class="restaurant-hero-slider-icon restaurant-hero-prev"
+          width="36"
+          height="36"
+        >
           <use href="././img/sprite.svg#icon-button-arrow-left"></use>
         </svg>
-        <svg class="restaurant-hero-slider-icon right" width="36" height="36">
+        <svg
+          class="restaurant-hero-slider-icon restaurant-hero-next"
+          width="36"
+          height="36"
+        >
           <use href="././img/sprite.svg#icon-button-arrow-right"></use>
         </svg>
       </div>
@@ -116,3 +124,31 @@
     </p>
   </div>
 </section>
+<script>
+  $('.restaurant-hero-slider').slick({
+    slide: '.restaurant-hero-slider-item',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    variableWidth: true,
+    prevArrow: $('.restaurant-hero-prev'),
+    nextArrow: $('.restaurant-hero-next'),
+  });
+  $('.restaurant-hero-slider').on(
+    'afterChange',
+    function (event, slick, currentSlide) {
+      if (currentSlide === 0) {
+        $('.restaurant-hero-prev').css('opacity', '0.3');
+      } else {
+        $('.restaurant-hero-prev').css('opacity', '1');
+      }
+      if (currentSlide === slick.slideCount - 1) {
+        $('.restaurant-hero-next').css('opacity', '0.3');
+      } else {
+        $('.restaurant-hero-next').css('opacity', '1');
+      }
+    }
+  );
+</script>
