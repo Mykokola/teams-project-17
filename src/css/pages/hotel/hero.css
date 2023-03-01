@@ -24,8 +24,13 @@
     min-height: 429px;
 }
 
-.hotel-hero-slider {
+.hotel-hero-img:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.hotel-hero-slider-container {
     margin-bottom: 40px;
+    
 }
 
 .hotel-hero-text {
@@ -33,12 +38,14 @@
     letter-spacing: 0.05em;
 }
 
-.hotel-hero-slider-images {
+.hotel-hero-slider {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .hotel-hero-slider-arrows {
     width: 104px;
+    height: 36px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -47,14 +54,11 @@
 .hotel-hero-slider-icon {
     stroke: var(--dark-color);
     fill: none;
+    cursor: pointer;
 }
 
-.hotel-hero-slider-icon.left {
+.hotel-hero-prev {
     opacity: 0.3;
-}
-
-.hotel-hero-slider-icon.right {
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -81,11 +85,11 @@
         min-height: 548px;
     }
 
-    .hotel-hero-slider {
+    .hotel-hero-slider-container {
         margin-bottom: 0;
     }
 
-    .hotel-hero-slider-images {
+    .hotel-hero-slider {
         margin-bottom: 40px;
     }
 
@@ -112,11 +116,11 @@
         font-size: 90px;
     }
 
-    .hotel-hero-slider {
+    .hotel-hero-slider-container {
         width: 703px;
     }
 
-    .hotel-hero-slider-images {
+    .hotel-hero-slider {
         margin-bottom: 16px;
     }
 
