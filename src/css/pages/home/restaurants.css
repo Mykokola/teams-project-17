@@ -1,5 +1,5 @@
 .home-restaurant-details {
-  padding-top: 44px;
+  padding-bottom: 64px;
 }
 .home-restaurant-details-btn-desktop {
   display: none;
@@ -22,7 +22,7 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 82px;
 }
 .home-restaurant-details-slider-wrapper {
   width: 158px;
@@ -56,6 +56,9 @@
   .home-restaurant-details-text {
     width: 221px;
   }
+  .home-restaurant-details-slider {
+    margin-bottom: 108px;
+  }
   .home-restaurant-details-slider-wrapper {
     width: 336px;
     height: 309px;
@@ -71,12 +74,14 @@
 
 @media screen and (min-width: 1440px) {
   .home-restaurant-details {
+    padding-top: 44px;
+    padding-bottom: 100px;
     position: relative;
   }
   .home-restaurant-details-content-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 125px;
+    margin-bottom: 0;
   }
   .home-restaurant-details-slider {
     display: none;
@@ -90,8 +95,10 @@
   .home-restaurant-details-desktop-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 125px;
   }
   .home-restaurant-details-btn-desktop {
-    display: block;
+    display: flex;
+    gap: 14px;
   }
 }

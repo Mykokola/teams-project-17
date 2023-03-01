@@ -10,7 +10,13 @@
         </p>
       </div>
       <div class="home-hotel-details-btn-desktop">
-        <button type="button" class="btn btn-dark-bg">book a room</button>
+        <button
+          type="button"
+          class="btn btn-dark-bg js-open-modal"
+          data-modal="book-room"
+        >
+          book a room
+        </button>
         <a href="./hotel.html" class="btn btn-dark-bg">View room</a>
       </div>
     </div>
@@ -23,25 +29,54 @@
       src="/img/home/hotel-details/home-hotel-bed-mobile-1x.jpg"
       alt="Home hotel image"
     />
+
+    <!-- home-hotel-details-slider -->
+
     <div class="home-hotel-details-slider">
-      <img
-        class="home-hotel-details-slider-img"
-        srcset="
-          /img/home/hotel-details/home-hotel-bot-mobile-1x.jpg 1x,
-          /img/home/hotel-details/home-hotel-bot-mobile-2x.jpg 2x
-        "
-        src="/img/home/hotel-details/home-hotel-bot-mobile-1x.jpg"
-        alt="Home hotel image"
-      />
-      <img
-        class="home-hotel-details-slider-img"
-        srcset="
-          /img/home/hotel-details/home-hotel-bat-mobile-1x.jpg 1x,
-          /img/home/hotel-details/home-hotel-bat-mobile-2x.jpg 2x
-        "
-        src="/img/home/hotel-details/home-hotel-bat-mobile-1x.jpg"
-        alt="Home hotel image"
-      />
+      <div class="home-hotel-details-slider-item">
+        <img
+          class="home-hotel-details-slider-img"
+          srcset="
+            /img/home/hotel-details/home-hotel-bot-mobile-1x.jpg 1x,
+            /img/home/hotel-details/home-hotel-bot-mobile-2x.jpg 2x
+          "
+          src="/img/home/hotel-details/home-hotel-bot-mobile-1x.jpg"
+          alt="Home hotel image"
+        />
+      </div>
+      <div class="home-hotel-details-slider-item">
+        <img
+          class="home-hotel-details-slider-img"
+          srcset="
+            /img/home/hotel-details/home-hotel-bat-mobile-1x.jpg 1x,
+            /img/home/hotel-details/home-hotel-bat-mobile-2x.jpg 2x
+          "
+          src="/img/home/hotel-details/home-hotel-bat-mobile-1x.jpg"
+          alt="Home hotel image"
+        />
+      </div>
+      <div class="home-hotel-details-slider-item">
+        <img
+          class="home-hotel-details-slider-img"
+          srcset="
+            /img/home/hotel-details/home-hotel-mirror-tablet-1x.jpg 1x,
+            /img/home/hotel-details/home-hotel-mirror-tablet-2x.jpg 2x
+          "
+          src="/img/home/hotel-details/home-hotel-mirror-tablet-1x.jpg"
+          alt="Home hotel image"
+        />
+      </div>
+      <div class="home-hotel-details-slider-item">
+        <img
+          class="home-hotel-details-slider-img"
+          srcset="
+            /img/home/hotel-details/home-hotel-sink-desktop-1x.jpg 1x,
+            /img/home/hotel-details/home-hotel-sink-desktop-1x.jpg 2x
+          "
+          src="/img/home/hotel-details/home-hotel-sink-desktop-1x.jpg"
+          alt="Home hotel image"
+        />
+      </div>
     </div>
     <div class="home-hotel-details-gallery-grid">
       <div class="div1">
@@ -156,8 +191,24 @@
       </div>
     </div>
     <div class="home-hotel-details-btn-wrapper">
-      <button type="button" class="btn btn-dark-bg">book a room</button>
+      <button
+        type="button"
+        class="btn btn-dark-bg js-open-modal"
+        data-modal="book-room"
+      >
+        book a room
+      </button>
       <a href="./hotel.html" class="btn btn-dark-bg">View room</a>
     </div>
   </div>
 </section>
+<script>
+  $(document).ready(function () {
+    $('.home-hotel-details-slider').slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      variableWidth: true,
+    });
+  });
+</script>
