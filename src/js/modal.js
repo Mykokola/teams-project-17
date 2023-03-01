@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
+         body.classList.remove('no-scroll');
       });
 
    }); // end foreach
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
+            document.querySelector('body').classList.remove('no-scroll');
         };
     }, false);
 
@@ -64,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
+        document.querySelector('body').classList.remove('no-scroll');
     });
 
 
