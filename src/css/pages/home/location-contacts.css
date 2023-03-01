@@ -33,7 +33,7 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
-.home-location dt {
+.home-location p {
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -110,7 +110,7 @@
         font-size: 18px;
         line-height: 1.33;
     }
-    .home-location dt {
+    .home-location p {
         font-weight: 700;
     }
     .map {
