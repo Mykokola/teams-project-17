@@ -1,0 +1,150 @@
+.hotel-hero {
+    padding-top: 40px;
+}
+
+.hotel-hero-container {
+    padding-right: 0;
+}
+
+.hotel-hero-title-holder {
+    margin-bottom: 40px;
+}
+
+.hotel-hero-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+
+.hotel-hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.hotel-hero-img {
+    max-width: 250px;
+    min-height: 429px;
+}
+
+.hotel-hero-img:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.hotel-hero-slider-container {
+    margin-bottom: 40px;
+    
+}
+
+.hotel-hero-text {
+    line-height: 1.29;
+    letter-spacing: 0.05em;
+}
+
+.hotel-hero-slider {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.hotel-hero-slider-arrows {
+    width: 104px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.hotel-hero-slider-icon {
+    stroke: var(--dark-color);
+    fill: none;
+    cursor: pointer;
+}
+
+.hotel-hero-prev {
+    opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+    .hotel-hero-container {
+        padding-bottom: 76px;
+        position: relative;
+    }
+
+    .hotel-hero-title-holder {
+        margin-bottom: 54px;
+    }
+
+    .hotel-hero-title {
+        font-size: 80px;
+        margin-bottom: 32px;
+    }
+
+    .hotel-hero-buttons {
+        gap: 14px;
+    }
+
+    .hotel-hero-img {
+        max-width: 436px;
+        min-height: 548px;
+    }
+
+    .hotel-hero-img:not(:last-of-type) {
+        margin-right: 32px;
+    }
+
+    .hotel-hero-slider-container {
+        margin-bottom: 0;
+    }
+
+    .hotel-hero-slider {
+        margin-bottom: 40px;
+    }
+
+    .hotel-hero-slider-arrows {
+        margin-right: 32px;
+    }
+
+    .hotel-hero-text {
+        max-width: 338px;
+        position: absolute;
+        bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hotel-hero-container {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hotel-hero-title-holder {
+        margin-top: 174px;
+        margin-bottom: 0;
+    }
+
+    .hotel-hero-title {
+        font-size: 90px;
+    }
+
+    .hotel-hero-slider-container {
+        width: 703px;
+    }
+
+    .hotel-hero-slider {
+        margin-bottom: 16px;
+    }
+
+    .hotel-hero-img {
+        min-height: 580px;
+    }
+
+    .hotel-hero-slider-arrows {
+        margin-left: 0;
+    }
+    
+    .hotel-hero-text {
+        bottom: 48px;
+    }
+}

@@ -1,0 +1,147 @@
+.triple-room-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 20px;
+
+	margin-bottom: 32px;
+}
+.triple-room-img-1 {
+	order: 1;
+	max-width: 46%;
+}
+.triple-room-img-3 {
+	order: 2;
+	max-width: 46%;
+}
+
+.triple-room-title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	width: 246px;
+	margin-bottom: 32px;
+	color: var(--dark-color);
+}
+.triple-room-text {
+	font-size: 14px;
+	line-height: 1.29;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: var(--dark-color);
+}
+
+.triple-room-list {
+	margin-bottom: 28px;
+}
+.triple-room-item {
+	margin-bottom: 24px;
+}
+
+.triple-room-btn {
+	margin-right: 12px;
+}
+
+@media screen and (min-width:375px) {
+	.triple-room-img-1, .triple-room-img-3 {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width:768px) {
+
+	.triple-room-images {
+	display: grid;
+	grid-template-columns: 331px 341px;
+	grid-template-rows: 261px 175px;
+	grid-column-gap: 32px;
+	grid-row-gap: 32px;
+	justify-content: end;
+	justify-items: start;
+	margin-bottom: 40px;
+}
+.triple-room-img-3 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+	.triple-room-title {
+	width: auto;
+	font-size: 40px;
+	line-height: 1.1;
+	}
+
+	.triple-room-text {
+	font-size: 18px;
+	line-height: 1.33;
+}
+
+	.triple-room-list {
+	display: flex;
+	gap: 32px;
+	margin-bottom: 40px;
+
+}
+
+	.triple-room-list li:first-child {
+		width: 355px;
+	}
+
+	.triple-room-list li:last-child {
+		width: 299px;
+	}
+
+	.triple-room-item {
+	margin-bottom: auto;
+	}
+
+
+	.triple-room-btn {
+	margin-right: 14px;
+}
+}
+
+@media screen and (min-width:1440px) {
+.triple-room-images {
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	}
+
+.triple-room-img-1, .triple-room-img-3 {
+	order: 0;
+}
+.triple-room-details {
+	position: relative;
+}
+.triple-container {
+	margin-left: 50%;
+}
+.triple-room-title {
+	margin-bottom: 40px;
+}
+.triple-room-list {
+	margin-bottom: 0;
+}
+
+	.triple-room-list li:first-child {
+		width: 355px;
+	}
+
+	.triple-room-list li:last-child {
+		width: 299px;
+	}
+
+.triple-room-info {
+	position: absolute;
+	top: 0;
+}
+
+.triple-room-btn {
+	margin-right: 14px;
+}
+}

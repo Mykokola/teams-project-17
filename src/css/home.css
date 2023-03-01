@@ -5,13 +5,9 @@
 @import url('./base/common.css');
 /* COMPONENT */
 @import url('./components/container.css');
-@import url('./components/modal/prices-room--m-w.css');
-@import url('./components/modal/book-table--m-w.css');
-@import url('./components/modal/book-room--m-w.css');
+@import url('./components/modal/common.css');
 @import url('./components/button.css');
-
-
-
+@import url('./components/mobile-tablet-menu.css');
 /* PAGES */
 @import url('./pages/header.css');
 @import url('./pages/footer.css');

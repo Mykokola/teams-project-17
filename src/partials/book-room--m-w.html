@@ -1,0 +1,67 @@
+<!--! Щоб додали посилання на це мод.вікно: class="js-open-modal" data-modal="book-room" -->
+<!-- Для роботи з модалками style="visibility: visible; opacity: 1;" -->
+
+<section>
+    <!--! додали атрибут ідентифікації мод.вікна: data-modal="book-room" -->
+    <div class="modal book-room" data-modal="book-room">
+        <!--! додали клас закриття мод.вікна: js-modal-close -->
+        <button class="modal-close-btn js-modal-close" type="button" >
+            <svg class="modal-close-btn-icon">
+                <use href="/img/sprite.svg#modal-cross"></use>
+            </svg>
+        </button>
+
+        <h4 class="call-to-action">BOOK <span class="ital">a room</span></h4>
+        <form action="#">
+            <div class="modal-form-wrapper">
+                <label class="modal-form-field">
+                    <input type="text" id="user_name" name="user_name" class="modal-form-input" pattern="^[a-zA-Zа-яА-Я]+$"
+                        minlength="2" placeholder="Your name *" title="Name should only contain letters" required>
+                    <span class="modal-form-input-desc">who should book a room for?</span>
+                </label>
+                
+                <!-- Варіант 1 input-type="tel" з підстановкою телефону через ДЖС, скрипт в папці js файлі mw-number-reg-->
+                <label class="modal-form-field">
+                    <input id="online_phone" type="tel" name="user_tel" class="modal-form-input" value="+38 ()"
+                        pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+38 (___) ___-__-__"
+                        title="Phone number should be like +38 (0xx) xxx-xx-xx" required>
+                    <span class="modal-form-input-desc">phone number</span>
+                </label>
+
+                <!-- Варіант 2 input-type="tel" -->
+                <!-- <label class="modal-form-field">
+                    <input type="tel" name="user_tel" class="modal-form-input"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Phone number should be like xxx-xxx-xx-xx" placeholder="+ 38 ()"
+                        required>
+                    <span class="modal-form-input-desc">phone number</span>
+                </label> -->
+                
+                <label class="modal-form-field date">
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
+                    <span class="modal-form-input-desc">Check-in date</span>
+                </label>
+                
+                
+                <label class="modal-form-field date-desc">
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
+                    <span class="modal-form-input-desc">Check-out date</span>
+                </label>
+                
+                <label class="modal-form-field">
+                    <select id="number-category" class="modal-form-select" >
+                        <option value="hide">Number category</option>
+                        <option value="double-luxury-room">double luxury room</option>
+                        <option value="triple-room">triple room</option>
+                        <option value="four-seater-room">four-seater room</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <button class="btn btn-dark-bg" type="submit">MAKE A RESERVATION</button>
+        </form>
+    </div>
+
+    <!-- Фон під модальним вікном -->
+    <div class="overlay js-overlay-modal"></div>
+</section>

@@ -1,16 +1,18 @@
 .double-room-images {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	row-gap: 20px;
-	column-gap: 19px;
 
 	margin-bottom: 32px;
 }
 .double-room-img-1 {
 	order: 1;
+	max-width: 46%;
 }
 .double-room-img-3 {
 	order: 2;
+	max-width: 46%;
 }
 
 .double-room-title {
@@ -42,6 +44,12 @@
 	margin-right: 12px;
 }
 
+@media screen and (min-width:375px) {
+	.double-room-img-1, .double-room-img-3 {
+		max-width: 100%;
+	}
+}
+
 @media screen and (min-width:768px) {
 
 	.double-room-images {
@@ -52,6 +60,8 @@
 	grid-row-gap: 32px;
 	justify-content: end;
 	justify-items: end;
+
+	margin-bottom: 40px;
 }
 .double-room-img-1, .double-room-img-3 {
 	order: 0;
@@ -104,6 +114,8 @@
 	align-content: center;
 	justify-content: center;
 	align-items: center;
+
+	margin-bottom: 50px;
 	}
 
 .double-room-details {
