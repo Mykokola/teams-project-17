@@ -20,7 +20,7 @@
   position: relative;
   display: flex;
   width: 520px;
-  margin-bottom: 100px;
+  margin-bottom: 24px;
 }
 .hero-room-picture:not(:last-child) {
   margin-right: 20px;
@@ -28,6 +28,24 @@
 .hero-room-img {
   width: 250px;
 }
+.hero-room-slider-arrows {
+  width: 104px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.hero-room-slider-icon {
+  stroke: var(--dark-color);
+  fill: none;
+  cursor: pointer;
+}
+
+.hero-room-prev {
+  opacity: 0.3;
+}
+
 .hero-room-text {
   width: 289px;
 
@@ -64,12 +82,12 @@
     bottom: -96px;
     left: 600px;
   }
+  .hero-room-wrap-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 @media screen and (min-width: 1440px) {
-  /* .hero-room {
-    padding-top: 169px;
-    padding-bottom: 48px;
-  } */
   .hero-room-page {
     padding-top: 169px;
   }
@@ -98,7 +116,16 @@
     height: 100%;
     width: 100%;
   }
+  .hero-room-wrap-bottom {
+    justify-content: flex-end;
+  }
+  .hero-room-slider-arrows {
+    margin-left: 0;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
   .hero-room-text {
+    margin-right: 415px;
     padding-bottom: 48px;
   }
 }
