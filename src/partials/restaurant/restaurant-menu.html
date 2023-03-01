@@ -1,9 +1,9 @@
 <section id="menu" class="section rest-menu-section">
   <div class="rest-menu-container container">
     <h2 class="rest-menu-title">RESTAURANT MENU</h2>
-    <div class="rest-menu">
+    <div class="rest-menu menu-slider">
       <!-- HOT MEALS -->
-      <div class="rest-menu-slider">
+      <div class="rest-menu-slider slider-item">
         <h3>HOT MEALS</h3>
 
         <ul class="rest-menu-list list">
@@ -96,7 +96,7 @@
       </div>
 
       <!-- Side dishes and snacks -->
-      <div class="rest-menu-slider vis-hidden">
+      <div class="rest-menu-slider slider-item vis-hidden">
         <h3>Side dishes and snacks</h3>
 
         <ul class="rest-menu-list list">
@@ -181,7 +181,7 @@
       </div>
 
       <!-- Salads -->
-      <div class="rest-menu-slider vis-hidden">
+      <div class="rest-menu-slider slider-item vis-hidden">
         <h3>Salads</h3>
 
         <ul class="rest-menu-list list">
@@ -260,7 +260,7 @@
       </div>
 
       <!-- Desserts and Drinks -->
-      <div class="rest-menu-slider vis-hidden">
+      <div class="rest-menu-slider slider-item vis-hidden">
         <div class="rest-menu-desserts">
           <h3>Desserts</h3>
           <ul class="rest-menu-list list">
@@ -338,6 +338,34 @@
         </div>
       </div>
     </div>
-    <button class="rest-btn btn btn-light-bg js-open-modal" data-modal="book-table">book a table</button>
+    <div class="btn-arrows"></div>
+    <button
+      class="rest-btn btn btn-light-bg js-open-modal"
+      data-modal="book-table"
+    >
+      book a table
+    </button>
   </div>
 </section>
+<script>
+  $(document).ready(function () {
+    $('.menu-slider').slick({
+      adaptiveHeight: true,
+      speed: 500,
+      infinite: false,
+      slidesToShow: 4,
+      arrows: false,
+
+      responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 1,
+            arrows: true,
+          },
+        },
+      ],
+      appendArrows: $('.btn-arrows'),
+    });
+  });
+</script>
