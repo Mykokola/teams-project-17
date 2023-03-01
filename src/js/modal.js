@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
-       closeButtons = document.querySelectorAll('.js-modal-close');
+       closeButtons = document.querySelectorAll('.js-modal-close'),
+       body = document.querySelector('body');
 
 
    /* Перебираем массив кнопок */
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             подложке и окну чтобы показать их. */
          modalElem.classList.add('active');
          overlay.classList.add('active');
+         body.classList.add('no-scroll');
       }); // end click
 
    }); // end foreach
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
+         body.classList.remove('no-scroll');
       });
 
    }); // end foreach
@@ -55,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
+            document.querySelector('body').classList.remove('no-scroll');
         };
     }, false);
 
@@ -62,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
+        document.querySelector('body').classList.remove('no-scroll');
     });
 
 
