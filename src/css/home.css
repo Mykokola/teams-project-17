@@ -8,6 +8,7 @@
 @import url('./components/modal/common.css');
 @import url('./components/button.css');
 @import url('./components/mobile-tablet-menu.css');
+@import url('./components/scroll-button-up.css');
 /* PAGES */
 @import url('./pages/header.css');
 @import url('./pages/footer.css');
