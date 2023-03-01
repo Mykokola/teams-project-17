@@ -1,16 +1,18 @@
 .triple-room-images {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	row-gap: 20px;
-	column-gap: 20px;
 
 	margin-bottom: 32px;
 }
 .triple-room-img-1 {
 	order: 1;
+	max-width: 46%;
 }
 .triple-room-img-3 {
 	order: 2;
+	max-width: 46%;
 }
 
 .triple-room-title {
@@ -40,6 +42,12 @@
 
 .triple-room-btn {
 	margin-right: 12px;
+}
+
+@media screen and (min-width:375px) {
+	.triple-room-img-1, .triple-room-img-3 {
+		max-width: 100%;
+	}
 }
 
 @media screen and (min-width:768px) {
