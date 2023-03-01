@@ -1,5 +1,118 @@
-<section>
-    <h1>restaurant</h1>
-    <button class="btn btn-light-bg js-open-modal" data-modal="book-table">book a table</button>
-    <a class="btn btn-light-bg" href="#menu">view a menu</a>
+<section class="restaurant-hero section">
+  <div class="container restaurant-hero-container">
+    <div class="restaurant-hero-title-holder">
+      <h1 class="restaurant-hero-title">restaurant</h1>
+      <div class="restaurant-hero-buttons">
+        <button class="btn btn-light-bg js-open-modal" data-modal="book-table">
+          book a table
+        </button>
+        <a class="btn btn-light-bg" href="#menu">view a menu</a>
+      </div>
+    </div>
+    <div class="restaurant-hero-slider">
+      <div class="restaurant-hero-slider-images">
+        <div class="restaurant-hero-img">
+          <picture>
+            <source
+              srcset="
+                /img/restaurant/hero/restaurant-desktop-1x.jpg 496w,
+                /img/restaurant/hero/restaurant-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="
+                /img/restaurant/hero/restaurant-tablet-1x.jpg 408w,
+                /img/restaurant/hero/restaurant-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="
+                /img/restaurant/hero/restaurant-mobile-1x.jpg 250w,
+                /img/restaurant/hero/restaurant-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="/img/restaurant/hero/restaurant3-mobile-1x.jpg"
+              alt="Restaurant"
+            />
+          </picture>
+        </div>
+        <div class="restaurant-hero-img visually-hidden">
+          <picture>
+            <source
+              srcset="
+                /img/restaurant/hero/dish-desktop-1x.jpg 496w,
+                /img/restaurant/hero/dish-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="
+                /img/restaurant/hero/dish-tablet-1x.jpg 408w,
+                /img/restaurant/hero/dish-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="
+                /img/restaurant/hero/dish-mobile-1x.jpg 250w,
+                /img/restaurant/hero/dish-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="/img/restaurant/hero/dish-mobile-1x.jpg"
+              alt="Dish"
+            />
+          </picture>
+        </div>
+        <div class="restaurant-hero-img visually-hidden">
+          <picture>
+            <source
+              srcset="
+                /img/restaurant/hero/cooking-desktop-1x.jpg 496w,
+                /img/restaurant/hero/cooking-desktop-2x.jpg 992w
+              "
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="
+                /img/restaurant/hero/cooking-tablet-1x.jpg 408w,
+                /img/restaurant/hero/cooking-tablet-2x.jpg 816w
+              "
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="
+                /img/restaurant/hero/cooking-mobile-1x.jpg 250w,
+                /img/restaurant/hero/cooking-mobile-2x.jpg 500w
+              "
+              sizes="250px"
+              src="/img/restaurant/hero/cooking-mobile-1x.jpg"
+              alt="Cooking"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="restaurant-hero-slider-arrows">
+        <svg class="restaurant-hero-slider-icon left" width="36" height="36">
+          <use href="././img/sprite.svg#icon-button-arrow-left"></use>
+        </svg>
+        <svg class="restaurant-hero-slider-icon right" width="36" height="36">
+          <use href="././img/sprite.svg#icon-button-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+
+    <p class="restaurant-hero-text">
+      Whether you're in the mood for a hearty breakfast, a light lunch, or a
+      <span class="ital">romantic dinner</span>, our menu has something for
+      everyone.
+    </p>
+  </div>
 </section>

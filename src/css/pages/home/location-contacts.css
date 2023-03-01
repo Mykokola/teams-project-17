@@ -14,6 +14,7 @@
     width: 100%;
     height: 300px;
     filter: grayscale();
+    box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }
 .home-location ul {
     flex-direction: column;
