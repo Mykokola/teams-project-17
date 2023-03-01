@@ -87,7 +87,6 @@
   }
   .home-restaurant-details-btn-wrapper {
     display: none;
-    
   }
   .home-restaurant-details-desktop-wrapper {
     display: flex;
@@ -99,34 +98,32 @@
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .home-restaurant-details-btn-wrapper {
     margin-top: 82px;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .home-restaurant-details-btn-wrapper {
     margin-top: 108px;
   }
 }
-  
 
 /* -------------- SLIDER --------------- */
 .slick-slider {
   min-width: 0;
 }
 
-.slider__item{
+.home-restaurantdetails-slider-item {
   margin-right: 20px;
 }
 
-@media screen and (min-width:768px) {
-  .slider__item{
+@media screen and (min-width: 768px) {
+  .home-restaurantdetails-slider-item {
     margin-right: 32px;
   }
 }
-
 
 .home-restaurantdetails-slider {
   position: relative;
@@ -134,60 +131,121 @@
 
 .home-restaurantdetails-slider .slick-arrow.slick-prev {
   right: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E") 0 0 / 100% no-repeat;
-
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
+    0 0 / 100% no-repeat;
+  top: 100%;
+  left: 34px;
+  margin-top: 18px;
+  transform: translateX(calc(50% - 36px - 16px));
 }
 
 .home-restaurantdetails-slider .slick-arrow.slick-next {
   right: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E") 0 0 / 100% no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
+    0 0 / 100% no-repeat;
+  top: 100%;
+  right: 98%;
+  margin-top: 18px;
+  transform: translateX(calc(50% + 36px + 16px));
 }
 
-.home-restaurantdetails-slider .slick-arrow{
+@media screen and (min-width: 768px) {
+  .home-restaurantdetails-slider .slick-arrow.slick-prev {
+    right: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
+      0 0 / 100% no-repeat;
+    top: 100%;
+    left: 34px;
+    margin-top: 32px;
+    transform: translateX(calc(50% - 36px - 16px));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-restaurantdetails-slider .slick-arrow.slick-prev {
+    right: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
+      0 0 / 100% no-repeat;
+    top: 100%;
+    left: 50%;
+    margin-top: 51px;
+    transform: translateX(calc(50% - 36px - 16px));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-restaurantdetails-slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
+      0 0 / 100% no-repeat;
+    top: 100%;
+    right: 95%;
+    margin-top: 32px;
+    transform: translateX(calc(50% + 36px + 16px));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-restaurantdetails-slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
+      0 0 / 100% no-repeat;
+    top: 100%;
+    right: 50%;
+    margin-top: 51px;
+    transform: translateX(calc(50% + 36 px + 16px));
+  }
+}
+
+.home-restaurantdetails-slider .slick-arrow {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 
-.slick-prev.slick-disabled, .slick-next.slick-disabled {
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
   opacity: 0.3;
 }
 
+.slider__item-desktop {
+  display: none;
+}
 
-@media screen and (max-width: 767px){
-  .home-restaurantdetails-slider .slick-arrow{
-    margin: 13px 77% 0 6%;
+@media screen and (max-width: 767px) {
+  .slider__item-desktop {
+    display: none;
   }
 }
 
-@media screen and (min-width: 768px){
-  .home-restaurantdetails-slider .slick-arrow{
-    margin: 0 88% 0 3%;
-  }
-  .slick-prev.slick-disabled, .slick-next.slick-disabled {
+@media screen and (min-width: 768px) {
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
     opacity: 0.3;
   }
-}
-
-@media screen and (min-width: 1440px){
-  .home-restaurantdetails-slider .slick-arrow{
-    margin: 0 47% 0 48%;
+  .slider__item-desktop {
+    display: none;
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .home-restaurantdetails-slider .slick-arrow {
+    top: 100%;
+  }
+  .slider__item-desktop {
+    margin-right: 32px;
+  }
+}
 
 .slick-prev:before {
   content: '';
-
 }
 .slick-next:before {
   content: '';
-  
 }
 
-.slick-prev, .slick-next {
-  top: 110%;
-
+@media screen and (min-width: 1440px) {
+  .slider__item-desktop {
+    display: block;
+  }
 }
-
-
