@@ -129,3 +129,16 @@ footer::after {
     top: 117px;
   }
 }
+.room footer , .restaurant-header footer{
+  padding-top: 24px;
+}
+@media screen and (min-width:768px){
+  .room footer , .restaurant-header footer{
+    padding-top: 32px;
+  }
+}
+@media screen and (min-width:1440px){
+  .room footer , .restaurant-header footer{
+    padding-top: 44px;
+  }
+}
