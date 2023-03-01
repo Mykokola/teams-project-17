@@ -25,5 +25,4 @@ btnDown.addEventListener('click',(e) => {
    }  
    pricechange(2500)
 })
-console.log(priceValue)
-console.log(dayValue)
+
