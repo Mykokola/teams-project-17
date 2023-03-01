@@ -1,11 +1,11 @@
 .home-restaurant-details {
-padding-bottom: 64px;
+  padding-bottom: 64px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .home-restaurant-details {
     padding-bottom: 80px;
-    }
+  }
 }
 
 .home-restaurant-details-btn-desktop {
@@ -18,8 +18,13 @@ padding-bottom: 64px;
   margin-bottom: 24px;
 }
 .home-restaurant-details-content-wrapper {
-  margin-bottom: 32px;
+
 }
+
+.home-restaurant-details-desktop-wrapper{
+  margin-bottom: 32px;
+  }
+
 .home-restaurant-details-text {
   font-weight: 500;
   line-height: 1.29;
@@ -73,7 +78,10 @@ padding-bottom: 64px;
   }
   .home-restaurant-details-content-wrapper {
     align-items: center;
-    margin-bottom: 80px;
+
+  }
+  .home-restaurant-details-desktop-wrapper{
+        margin-bottom: 80px;
   }
 }
 
@@ -85,7 +93,6 @@ padding-bottom: 64px;
   .home-restaurant-details-content-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 125px;
   }
   .home-restaurant-details-slider {
     display: none;
@@ -99,6 +106,7 @@ padding-bottom: 64px;
   .home-restaurant-details-desktop-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 125px;
   }
   .home-restaurant-details-btn-desktop {
     display: flex;
@@ -137,7 +145,7 @@ padding-bottom: 64px;
   position: relative;
 }
 
-.home-restaurantdetails-slider-item-desktop{
+.home-restaurantdetails-slider-item-desktop {
   display: none;
 }
 
@@ -171,7 +179,7 @@ padding-bottom: 64px;
     margin-top: 32px;
     transform: translateX(calc(50% - 36px - 16px));
   }
-  .home-restaurantdetails-slider-item-desktop{
+  .home-restaurantdetails-slider-item-desktop {
     display: none;
   }
 }
@@ -186,7 +194,7 @@ padding-bottom: 64px;
     margin-top: 51px;
     transform: translateX(calc(50% - 36px - 16px));
   }
-  .home-restaurantdetails-slider-item-desktop{
+  .home-restaurantdetails-slider-item-desktop {
     display: block;
   }
 }
@@ -256,4 +264,3 @@ padding-bottom: 64px;
 .slick-next:before {
   content: '';
 }
-
