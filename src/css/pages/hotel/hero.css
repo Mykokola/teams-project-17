@@ -2,6 +2,10 @@
     padding-top: 40px;
 }
 
+.hotel-hero-container {
+    padding-right: 0;
+}
+
 .hotel-hero-title-holder {
     margin-bottom: 40px;
 }
@@ -48,6 +52,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
+    margin-right: 20px;
 }
 
 .hotel-hero-slider-icon {
@@ -94,6 +99,10 @@
 
     .hotel-hero-slider {
         margin-bottom: 40px;
+    }
+
+    .hotel-hero-slider-arrows {
+        margin-right: 32px;
     }
 
     .hotel-hero-text {
