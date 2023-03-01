@@ -124,31 +124,3 @@
     </p>
   </div>
 </section>
-<script>
-  $('.restaurant-hero-slider').slick({
-    slide: '.restaurant-hero-slider-item',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    arrows: true,
-    dots: false,
-    variableWidth: true,
-    prevArrow: $('.restaurant-hero-prev'),
-    nextArrow: $('.restaurant-hero-next'),
-  });
-  $('.restaurant-hero-slider').on(
-    'afterChange',
-    function (event, slick, currentSlide) {
-      if (currentSlide === 0) {
-        $('.restaurant-hero-prev').css('opacity', '0.3');
-      } else {
-        $('.restaurant-hero-prev').css('opacity', '1');
-      }
-      if (currentSlide === slick.slideCount - 1) {
-        $('.restaurant-hero-next').css('opacity', '0.3');
-      } else {
-        $('.restaurant-hero-next').css('opacity', '1');
-      }
-    }
-  );
-</script>

@@ -126,31 +126,4 @@
     </p>
   </div>
 </section>
-<script>
-  $('.hotel-hero-slider').slick({
-    slide: '.hotel-hero-slider-item',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    arrows: true,
-    dots: false,
-    variableWidth: true,
-    prevArrow: $('.hotel-hero-prev'),
-    nextArrow: $('.hotel-hero-next'),
-  });
-  $('.hotel-hero-slider').on(
-    'afterChange',
-    function (event, slick, currentSlide) {
-      if (currentSlide === 0) {
-        $('.hotel-hero-prev').css('opacity', '0.3');
-      } else {
-        $('.hotel-hero-prev').css('opacity', '1');
-      }
-      if (currentSlide === slick.slideCount - 1) {
-        $('.hotel-hero-next').css('opacity', '0.3');
-      } else {
-        $('.hotel-hero-next').css('opacity', '1');
-      }
-    }
-  );
-</script>
+
