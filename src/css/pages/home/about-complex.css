@@ -194,12 +194,12 @@
     transform: translateX(-80%);
     bottom: 128px;
   }
+  .home-about-reviews-container {
+    margin-bottom: 0;
+  }
   .home-about-business-class-wrapper {
     gap: 54px;
     max-width: 583px;
-  }
-  .home-about-list-wrapper img {
-    margin-bottom: 0;
   }
   .home-about-list-wrapper.business-class .home-about-text {
     margin-bottom: 0;
