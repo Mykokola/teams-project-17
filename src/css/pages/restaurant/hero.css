@@ -2,6 +2,10 @@
     padding-top: 40px;
 }
 
+.restaurant-hero-container {
+    padding-right: 0;
+}
+
 .restaurant-hero-title-holder {
     margin-bottom: 40px;
 }
@@ -47,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
+    margin-right: 20px;
 }
 
 .restaurant-hero-slider-icon {
@@ -94,6 +99,10 @@
 
     .restaurant-hero-slider {
         margin-bottom: 40px;
+    }
+
+    .restaurant-hero-slider-arrows {
+        margin-right: 32px;
     }
 
     .restaurant-hero-text {
