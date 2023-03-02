@@ -155,6 +155,8 @@
   .home-hotel-details {
     padding-top: 44px;
     padding-bottom: 60px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .home-hotel-details-contant-wrapper {
     margin-bottom: 0;
