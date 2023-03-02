@@ -13,12 +13,7 @@
 .welcome-text:not(:last-child) {
   margin-bottom: 32px;
 }
-.welcome-img-tablet {
-  display: none;
-}
-.welcome-img-desktop {
-  display: none;
-}
+
 
 /* ----MEDIA---- */
 
@@ -48,15 +43,7 @@
     margin-right: 32px;
     margin-bottom: 0;
   }
-  .welcome-img-mobile {
-    display: none;
-  }
-  .welcome-img-tablet {
-    display: block;
-  }
-  .welcome-img-desktop {
-    display: none;
-  }
+
 }
 @media screen and (min-width: 1440px) {
   .welcome {
@@ -94,13 +81,5 @@
     top: 0;
     left: 32px;
   }
-  .welcome-img-mobile {
-    display: none;
-  }
-  .welcome-img-tablet {
-    display: none;
-  }
-  .welcome-img-desktop {
-    display: block;
-  }
+
 }
