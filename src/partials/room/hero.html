@@ -199,31 +199,3 @@
     </div>
   </div>
 </section>
-<script>
-  $('.hero-room-slider').slick({
-    slide: '.hero-room-slider-item',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    arrows: true,
-    dots: false,
-    variableWidth: true,
-    prevArrow: $('.hero-room-prev'),
-    nextArrow: $('.hero-room-next'),
-  });
-  $('.hero-room-slider').on(
-    'afterChange',
-    function (event, slick, currentSlide) {
-      if (currentSlide === 0) {
-        $('.hero-room-prev').css('opacity', '0.3');
-      } else {
-        $('.hero-room-prev').css('opacity', '1');
-      }
-      if (currentSlide === slick.slideCount - 1) {
-        $('.hero-room-next').css('opacity', '0.3');
-      } else {
-        $('.hero-room-next').css('opacity', '1');
-      }
-    }
-  );
-</script>

@@ -86,3 +86,57 @@ $('.hotel-hero-slider').slick({
       // instead of a settings object
     ],
   });
+  $(document).ready(function () {
+    $('.menu-slider').slick({
+      adaptiveHeight: true,
+      speed: 500,
+      infinite: false,
+      slidesToShow: 4,
+      arrows: false,
+
+      responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 1,
+            arrows: true,
+          },
+        },
+      ],
+      appendArrows: $('.btn-arrows'),
+    });
+  });
+  $('.hero-room-slider').slick({
+    slide: '.hero-room-slider-item',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    variableWidth: true,
+    prevArrow: $('.hero-room-prev'),
+    nextArrow: $('.hero-room-next'),
+  });
+  $('.hero-room-slider').on(
+    'afterChange',
+    function (event, slick, currentSlide) {
+      if (currentSlide === 0) {
+        $('.hero-room-prev').css('opacity', '0.3');
+      } else {
+        $('.hero-room-prev').css('opacity', '1');
+      }
+      if (currentSlide === slick.slideCount - 1) {
+        $('.hero-room-next').css('opacity', '0.3');
+      } else {
+        $('.hero-room-next').css('opacity', '1');
+      }
+    }
+  );
+  $(document).ready(function () {
+    $('.home-hotel-details-slider').slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      variableWidth: true,
+    });
+  });
